@@ -1,18 +1,30 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+# 忽略引入库的所有警告（强迫症者的福音啊）
+inhibit_all_warnings!
 
-platform :ios, '8.0'
-target 'ShowTestDome' do
-    pod 'AFNetworking', '~> 3.0'
-    pod 'pop', '~> 1.0'
-    pod 'SDWebImage', '~>3.7'
+def base_pods
+    pod 'AFNetworking'
+    pod 'pop'
+    pod 'SDWebImage'
     pod 'Masonry'
-    pod "ReactiveCocoa", "~> 2.5"
-    pod 'CocoaAsyncSocket'
-    pod 'MBProgressHUD', '~> 0.9.2'
-    pod ‘MJExtension’
-    pod "MWPhotoBrowser"
-    pod 'FMDB'
+    pod "ReactiveObjC"
+    pod 'MJExtension'
     pod 'MJRefresh'
-    pod 'EAIntroView', '~> 2.7.0'
-    pod 'FTPopOverMenu'
-    pod 'YYCache'
+end
+
+target 'ShowTestDome' do
+
+  base_pods
+
+  target 'ShowTestDomeTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ShowTestDomeUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
 end

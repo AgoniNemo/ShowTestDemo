@@ -48,7 +48,7 @@
 }
 -(NSArray *)dataSource
 {
-    return @[@{@"title":@"WebViewController",@"vc":@"WebViewController"},@{@"title":@"TestViewController",@"vc":@"TestViewController"},@{@"title":@"UIWebViewController",@"vc":@"UIWebViewController"},@{@"title":@"TestOneViewController",@"vc":@"TestOneViewController"},@{@"title":@"ShowGIFViewController",@"vc":@"ShowGIFViewController"}];
+    return @[@{@"title":@"WebViewController",@"vc":@"WebViewController"},@{@"title":@"TestViewController",@"vc":@"TestViewController"},@{@"title":@"UIWebViewController",@"vc":@"UIWebViewController"},@{@"title":@"TestOneViewController",@"vc":@"TestOneViewController"},@{@"title":@"ShowGIFViewController",@"vc":@"ShowGIFViewController"},@{@"title":@"CaptionViewController",@"vc":@"CaptionViewController"},@{@"title":@"ASViewController",@"vc":@"ASViewController"}];
 }
 
 -(UITableView *)tableView
