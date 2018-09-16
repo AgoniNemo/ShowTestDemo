@@ -18,7 +18,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     [self.view addSubview:self.tableView];
     
 }
@@ -48,7 +47,15 @@
 }
 -(NSArray *)dataSource
 {
-    return @[@{@"title":@"WebViewController",@"vc":@"WebViewController"},@{@"title":@"TestViewController",@"vc":@"TestViewController"},@{@"title":@"UIWebViewController",@"vc":@"UIWebViewController"},@{@"title":@"TestOneViewController",@"vc":@"TestOneViewController"},@{@"title":@"ShowGIFViewController",@"vc":@"ShowGIFViewController"},@{@"title":@"CaptionViewController",@"vc":@"CaptionViewController"},@{@"title":@"ASViewController",@"vc":@"ASViewController"}];
+  return @[@{@"title":@"WebViewController",@"vc":@"WebViewController"},
+           @{@"title":@"TestViewController",@"vc":@"TestViewController"},
+           @{@"title":@"UIWebViewController",@"vc":@"UIWebViewController"},
+           @{@"title":@"TestOneViewController",@"vc":@"TestOneViewController"},
+           @{@"title":@"ShowGIFViewController",@"vc":@"ShowGIFViewController"},
+           @{@"title":@"CaptionViewController",@"vc":@"CaptionViewController"},
+           @{@"title":@"ASViewController",@"vc":@"ASViewController"},
+           @{@"title":@"ExcelViewController",@"vc":@"ExcelViewController"},
+           @{@"title":@"FoldingViewController",@"vc":@"FoldingViewController"}];
 }
 
 -(UITableView *)tableView
