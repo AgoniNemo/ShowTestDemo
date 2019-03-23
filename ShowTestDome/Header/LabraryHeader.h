@@ -9,8 +9,6 @@
 #ifndef LabraryHeader_h
 #define LabraryHeader_h
 
-
-#import <POP.h>
 #import <Masonry.h>
 
 #endif /* LabraryHeader_h */

@@ -7,6 +7,7 @@
 //
 
 #import "ShowGIFViewController.h"
+#import <FLAnimatedImage.h>
 
 @interface ShowGIFViewController ()
 
@@ -16,9 +17,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     
-    
-    
+    FLAnimatedImageView *imageV = [[FLAnimatedImageView alloc] init];
+    [self.view addSubview:imageV];
+    [imageV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.view);
+    }];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"IMG_0069" ofType:@"GIF"];
+    NSData *data = [NSData dataWithContentsOfFile:filePath];
+    FLAnimatedImage *image = [FLAnimatedImage animatedImageWithGIFData:data];
+    imageV.animatedImage = image;
 }
 
 - (void)didReceiveMemoryWarning {

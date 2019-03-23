@@ -47,15 +47,16 @@
 }
 -(NSArray *)dataSource
 {
-  return @[@{@"title":@"WebViewController",@"vc":@"WebViewController"},
-           @{@"title":@"TestViewController",@"vc":@"TestViewController"},
-           @{@"title":@"UIWebViewController",@"vc":@"UIWebViewController"},
-           @{@"title":@"TestOneViewController",@"vc":@"TestOneViewController"},
-           @{@"title":@"ShowGIFViewController",@"vc":@"ShowGIFViewController"},
-           @{@"title":@"CaptionViewController",@"vc":@"CaptionViewController"},
-           @{@"title":@"ASViewController",@"vc":@"ASViewController"},
-           @{@"title":@"ExcelViewController",@"vc":@"ExcelViewController"},
-           @{@"title":@"FoldingViewController",@"vc":@"FoldingViewController"}];
+  return @[@{@"title":@"WKWebView演示iOS传值到Web",@"vc":@"WebViewController"},
+           @{@"title":@"聊天气泡",@"vc":@"TestViewController"},
+           @{@"title":@"加载打包web",@"vc":@"UIWebViewController"},
+           @{@"title":@"选中TableView，里面的Lable不变颜色",@"vc":@"TestOneViewController"},
+           @{@"title":@"显示GIF",@"vc":@"ShowGIFViewController"},
+           @{@"title":@"类似拼多多详情商品界面闪现评论",@"vc":@"CaptionViewController"},
+           @{@"title":@"倒计时按钮",@"vc":@"ASViewController"},
+           @{@"title":@"类似Excel显示",@"vc":@"ExcelViewController"},
+           @{@"title":@"类似QQ好友列表",@"vc":@"FoldingViewController"},
+           @{@"title":@"视频和图片的混合轮播",@"vc":@"ImageVideoViewViewController"}];
 }
 
 -(UITableView *)tableView

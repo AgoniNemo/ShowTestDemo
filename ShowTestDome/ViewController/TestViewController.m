@@ -26,11 +26,11 @@ typedef BOOL(^TimerBlock)(NSDate *date);
     
 //    [self creatLeftBubble];
 //    
-//    [self creatRightBubble];
-//    
+    [self creatRightBubble];
+//
 //    [self createBubbon];
     
-    [self creatModel];
+//    [self creatModel];
 }
 -(void)creatModel{
 

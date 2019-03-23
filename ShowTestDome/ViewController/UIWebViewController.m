@@ -75,7 +75,7 @@
     JSObject *obj = [[JSObject alloc] init];
     context[@"iOS"] = obj;
     
-    WEAKSELF(self)
+    WeakSelf
     obj.block =^(NSString *title){
         NSLog(@"%@",title);
         weakSelf.vcTitle = title;
@@ -113,7 +113,7 @@
 
 -(void)getTitle{
     
-    WEAKSELF(self)
+    WeakSelf
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
         NSString *js = @"document.title";

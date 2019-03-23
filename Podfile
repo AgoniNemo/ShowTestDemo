@@ -11,6 +11,8 @@ def base_pods
     pod "ReactiveObjC"
     pod 'MJExtension'
     pod 'MJRefresh'
+    pod 'FLAnimatedImage'
+    pod 'Aspects'
 end
 
 target 'ShowTestDome' do

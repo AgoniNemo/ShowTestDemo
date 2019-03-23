@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  CQ_App
+//
+//  Created by mac on 2019/3/20.
+//  Copyright © 2019年 mac. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "MacroDefinition.h"
+
+#pragma mark ****** pod ******
+#import <Masonry.h>
+#import <MJExtension.h>
+#import <MJRefresh.h>
+
+#ifndef __OPTIMIZE__ // 处于开发阶段
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else  // 处于发布阶段
+#define NSLog(...) {}
+#endif
+
+#endif /* PrefixHeader_pch */
