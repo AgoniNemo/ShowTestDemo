@@ -50,7 +50,6 @@
   return @[@{@"title":@"WKWebView演示iOS传值到Web",@"vc":@"WebViewController"},
            @{@"title":@"聊天气泡",@"vc":@"TestViewController"},
            @{@"title":@"加载打包web",@"vc":@"UIWebViewController"},
-           @{@"title":@"选中TableView，里面的Lable不变颜色",@"vc":@"TestOneViewController"},
            @{@"title":@"显示GIF",@"vc":@"ShowGIFViewController"},
            @{@"title":@"类似拼多多详情商品界面闪现评论",@"vc":@"CaptionViewController"},
            @{@"title":@"倒计时按钮",@"vc":@"ASViewController"},
