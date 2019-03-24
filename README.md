@@ -18,7 +18,7 @@
 #### 视频和图片的混合轮播
 ![类似QQ好友列表](https://raw.githubusercontent.com/AgoniNemo/ShowTestDemo/master/image/5.png)
 
-#### 显示GIF
+#### 显示GIF（FLAnimatedImage）
 ![类似QQ好友列表](https://raw.githubusercontent.com/AgoniNemo/ShowTestDemo/master/image/6.png)
 
 #### 聊天气泡

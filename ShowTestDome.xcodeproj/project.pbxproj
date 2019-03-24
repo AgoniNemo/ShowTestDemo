@@ -21,6 +21,11 @@
 		BA620096224616D5001F21B4 /* Carousel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA620095224616D5001F21B4 /* Carousel.m */; };
 		BA6200992246170B001F21B4 /* VideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6200982246170B001F21B4 /* VideoView.m */; };
 		BA62009C2246172D001F21B4 /* VideoMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA62009B2246172D001F21B4 /* VideoMaskView.m */; };
+		BA62009F22462CBE001F21B4 /* VideoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA62009E22462CBE001F21B4 /* VideoListViewController.m */; };
+		BA6200A322462CE1001F21B4 /* VideoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6200A122462CE1001F21B4 /* VideoListCell.m */; };
+		BA6200A422462CE1001F21B4 /* VideoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA6200A222462CE1001F21B4 /* VideoListCell.xib */; };
+		BA6200AA2246355A001F21B4 /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6200A92246355A001F21B4 /* VideoModel.m */; };
+		BA6200AE22464553001F21B4 /* VideoPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6200AD22464553001F21B4 /* VideoPlayView.m */; };
 		BA6A5E811E67F78F00986F22 /* TestOneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A5E801E67F78F00986F22 /* TestOneTableViewCell.m */; };
 		BA6A5E841E6817A700986F22 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A5E831E6817A700986F22 /* TestModel.m */; };
 		BA7CE0481E557B78002226D5 /* UIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7CE0471E557B78002226D5 /* UIWebViewController.m */; };
@@ -98,6 +103,15 @@
 		BA6200982246170B001F21B4 /* VideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoView.m; sourceTree = "<group>"; };
 		BA62009A2246172D001F21B4 /* VideoMaskView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoMaskView.h; sourceTree = "<group>"; };
 		BA62009B2246172D001F21B4 /* VideoMaskView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoMaskView.m; sourceTree = "<group>"; };
+		BA62009D22462CBE001F21B4 /* VideoListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoListViewController.h; sourceTree = "<group>"; };
+		BA62009E22462CBE001F21B4 /* VideoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoListViewController.m; sourceTree = "<group>"; };
+		BA6200A022462CE1001F21B4 /* VideoListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoListCell.h; sourceTree = "<group>"; };
+		BA6200A122462CE1001F21B4 /* VideoListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoListCell.m; sourceTree = "<group>"; };
+		BA6200A222462CE1001F21B4 /* VideoListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoListCell.xib; sourceTree = "<group>"; };
+		BA6200A82246355A001F21B4 /* VideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
+		BA6200A92246355A001F21B4 /* VideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
+		BA6200AC22464553001F21B4 /* VideoPlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPlayView.h; sourceTree = "<group>"; };
+		BA6200AD22464553001F21B4 /* VideoPlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayView.m; sourceTree = "<group>"; };
 		BA6A5E7F1E67F78F00986F22 /* TestOneTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestOneTableViewCell.h; sourceTree = "<group>"; };
 		BA6A5E801E67F78F00986F22 /* TestOneTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOneTableViewCell.m; sourceTree = "<group>"; };
 		BA6A5E821E6817A700986F22 /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
@@ -263,6 +277,45 @@
 			path = Carousel;
 			sourceTree = "<group>";
 		};
+		BA6200A522463517001F21B4 /* VideoListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BA6200A72246353D001F21B4 /* Cell */,
+				BA6200A622463535001F21B4 /* Model */,
+				BA62009D22462CBE001F21B4 /* VideoListViewController.h */,
+				BA62009E22462CBE001F21B4 /* VideoListViewController.m */,
+			);
+			path = VideoListViewController;
+			sourceTree = "<group>";
+		};
+		BA6200A622463535001F21B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA6200A82246355A001F21B4 /* VideoModel.h */,
+				BA6200A92246355A001F21B4 /* VideoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA6200A72246353D001F21B4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BA6200A022462CE1001F21B4 /* VideoListCell.h */,
+				BA6200A122462CE1001F21B4 /* VideoListCell.m */,
+				BA6200A222462CE1001F21B4 /* VideoListCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BA6200AB224644ED001F21B4 /* VideoPlayView */ = {
+			isa = PBXGroup;
+			children = (
+				BA6200AC22464553001F21B4 /* VideoPlayView.h */,
+				BA6200AD22464553001F21B4 /* VideoPlayView.m */,
+			);
+			path = VideoPlayView;
+			sourceTree = "<group>";
+		};
 		BA7CE0491E557C80002226D5 /* JSObject */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +356,7 @@
 		BA8B465B214DFD4D00D9EC42 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				BA6200AB224644ED001F21B4 /* VideoPlayView */,
 				BA620093224616AA001F21B4 /* Carousel */,
 				BA8B467C214E364B00D9EC42 /* FoldingTableView */,
 				BA8B4661214DFF9F00D9EC42 /* ExcelView */,
@@ -317,6 +371,7 @@
 		BA8B465C214DFD9700D9EC42 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BA6200A522463517001F21B4 /* VideoListViewController */,
 				BA6200822245E720001F21B4 /* ShowGIFViewController.h */,
 				BA6200832245E720001F21B4 /* ShowGIFViewController.m */,
 				BA7CE0461E557B78002226D5 /* UIWebViewController.h */,
@@ -619,6 +674,7 @@
 				BA47DCC51E89FE9400DFD7F5 /* IMG_0076.JPG in Resources */,
 				BAA393C11E51859900B1F34D /* Assets.xcassets in Resources */,
 				BA7CE04E1E557DB0002226D5 /* dist in Resources */,
+				BA6200A422462CE1001F21B4 /* VideoListCell.xib in Resources */,
 				BA47DCC41E89FE9400DFD7F5 /* IMG_0069.GIF in Resources */,
 				BA834A611E529A480057DB88 /* web_bi_app in Resources */,
 				BA47DCC81E89FE9400DFD7F5 /* IMG_1060.PNG in Resources */,
@@ -745,6 +801,7 @@
 				BA620096224616D5001F21B4 /* Carousel.m in Sources */,
 				BA8B4685214E364B00D9EC42 /* FoldingModel.m in Sources */,
 				BA8B4670214DFF9F00D9EC42 /* YHExcelViewColumn.m in Sources */,
+				BA6200AA2246355A001F21B4 /* VideoModel.m in Sources */,
 				BA7CE0481E557B78002226D5 /* UIWebViewController.m in Sources */,
 				BA6200992246170B001F21B4 /* VideoView.m in Sources */,
 				BAA393B61E51859800B1F34D /* main.m in Sources */,
@@ -752,7 +809,10 @@
 				BA8B4674214DFFBC00D9EC42 /* ExcelViewController.m in Sources */,
 				BAA393E91E5185B000B1F34D /* ShowLable.m in Sources */,
 				BA7EFC40214A8C3C008C154D /* CaptionViewController.m in Sources */,
+				BA62009F22462CBE001F21B4 /* VideoListViewController.m in Sources */,
 				BA62008D224614C5001F21B4 /* ImageVideoViewViewController.m in Sources */,
+				BA6200A322462CE1001F21B4 /* VideoListCell.m in Sources */,
+				BA6200AE22464553001F21B4 /* VideoPlayView.m in Sources */,
 				BA8B466E214DFF9F00D9EC42 /* YHExcelViewIndexPath.m in Sources */,
 				BA8B4684214E364B00D9EC42 /* FoldingTableView.m in Sources */,
 			);
