@@ -13,6 +13,7 @@ def base_pods
     pod 'MJRefresh'
     pod 'FLAnimatedImage'
     pod 'Aspects'
+    pod 'MLeaksFinder', :configuration => 'Debug'
 end
 
 target 'ShowTestDome' do

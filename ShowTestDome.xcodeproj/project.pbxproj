@@ -15,6 +15,9 @@
 		BA47DCC61E89FE9400DFD7F5 /* IMG_0148.GIF in Resources */ = {isa = PBXBuildFile; fileRef = BA47DCC11E89FE9400DFD7F5 /* IMG_0148.GIF */; };
 		BA47DCC71E89FE9400DFD7F5 /* IMG_1014.PNG in Resources */ = {isa = PBXBuildFile; fileRef = BA47DCC21E89FE9400DFD7F5 /* IMG_1014.PNG */; };
 		BA47DCC81E89FE9400DFD7F5 /* IMG_1060.PNG in Resources */ = {isa = PBXBuildFile; fileRef = BA47DCC31E89FE9400DFD7F5 /* IMG_1060.PNG */; };
+		BA496359224E59760098D85F /* LeaksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA496358224E59760098D85F /* LeaksViewController.m */; };
+		BA496361224E5CB90098D85F /* NMTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BA496360224E5CB90098D85F /* NMTextField.m */; };
+		BA496364224E61AA0098D85F /* TextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BA496363224E61AA0098D85F /* TextField.m */; };
 		BA6200842245E720001F21B4 /* ShowGIFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6200832245E720001F21B4 /* ShowGIFViewController.m */; };
 		BA62008D224614C5001F21B4 /* ImageVideoViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA62008C224614C5001F21B4 /* ImageVideoViewViewController.m */; };
 		BA620092224615AF001F21B4 /* ViewControllerConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = BA620091224615AF001F21B4 /* ViewControllerConfigure.m */; };
@@ -89,6 +92,12 @@
 		BA47DCC11E89FE9400DFD7F5 /* IMG_0148.GIF */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = IMG_0148.GIF; sourceTree = "<group>"; };
 		BA47DCC21E89FE9400DFD7F5 /* IMG_1014.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_1014.PNG; sourceTree = "<group>"; };
 		BA47DCC31E89FE9400DFD7F5 /* IMG_1060.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_1060.PNG; sourceTree = "<group>"; };
+		BA496357224E59760098D85F /* LeaksViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeaksViewController.h; sourceTree = "<group>"; };
+		BA496358224E59760098D85F /* LeaksViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeaksViewController.m; sourceTree = "<group>"; };
+		BA49635F224E5CB90098D85F /* NMTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMTextField.h; sourceTree = "<group>"; };
+		BA496360224E5CB90098D85F /* NMTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMTextField.m; sourceTree = "<group>"; };
+		BA496362224E61AA0098D85F /* TextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextField.h; sourceTree = "<group>"; };
+		BA496363224E61AA0098D85F /* TextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextField.m; sourceTree = "<group>"; };
 		BA6200822245E720001F21B4 /* ShowGIFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowGIFViewController.h; sourceTree = "<group>"; };
 		BA6200832245E720001F21B4 /* ShowGIFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowGIFViewController.m; sourceTree = "<group>"; };
 		BA62008622460A3C001F21B4 /* MacroDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDefinition.h; sourceTree = "<group>"; };
@@ -237,6 +246,26 @@
 			path = chatImage;
 			sourceTree = "<group>";
 		};
+		BA496356224E59260098D85F /* LeaksViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BA496357224E59760098D85F /* LeaksViewController.h */,
+				BA496358224E59760098D85F /* LeaksViewController.m */,
+			);
+			path = LeaksViewController;
+			sourceTree = "<group>";
+		};
+		BA49635E224E5CB90098D85F /* NMTextField */ = {
+			isa = PBXGroup;
+			children = (
+				BA496362224E61AA0098D85F /* TextField.h */,
+				BA496363224E61AA0098D85F /* TextField.m */,
+				BA49635F224E5CB90098D85F /* NMTextField.h */,
+				BA496360224E5CB90098D85F /* NMTextField.m */,
+			);
+			path = NMTextField;
+			sourceTree = "<group>";
+		};
 		BA62008522460A3C001F21B4 /* Define */ = {
 			isa = PBXGroup;
 			children = (
@@ -356,6 +385,7 @@
 		BA8B465B214DFD4D00D9EC42 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				BA49635E224E5CB90098D85F /* NMTextField */,
 				BA6200AB224644ED001F21B4 /* VideoPlayView */,
 				BA620093224616AA001F21B4 /* Carousel */,
 				BA8B467C214E364B00D9EC42 /* FoldingTableView */,
@@ -371,6 +401,7 @@
 		BA8B465C214DFD9700D9EC42 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BA496356224E59260098D85F /* LeaksViewController */,
 				BA6200A522463517001F21B4 /* VideoListViewController */,
 				BA6200822245E720001F21B4 /* ShowGIFViewController.h */,
 				BA6200832245E720001F21B4 /* ShowGIFViewController.m */,
@@ -785,6 +816,7 @@
 				BA7EFC48214A8C9E008C154D /* ASCountDownView.m in Sources */,
 				BA834A561E5294F70057DB88 /* WebViewController.m in Sources */,
 				BA8B467B214E347A00D9EC42 /* FoldingViewController.m in Sources */,
+				BA496364224E61AA0098D85F /* TextField.m in Sources */,
 				BA8B4683214E364B00D9EC42 /* FoldingSectionHeader.m in Sources */,
 				BA6200842245E720001F21B4 /* ShowGIFViewController.m in Sources */,
 				BA82C3C41E5D967B003B83FF /* ChatImageView.m in Sources */,
@@ -795,7 +827,9 @@
 				BA834A5F1E5298ED0057DB88 /* WeakScriptMessageDelegate.m in Sources */,
 				BA6A5E811E67F78F00986F22 /* TestOneTableViewCell.m in Sources */,
 				BA8B466D214DFF9F00D9EC42 /* YHExcelView.m in Sources */,
+				BA496359224E59760098D85F /* LeaksViewController.m in Sources */,
 				BAA393BC1E51859800B1F34D /* ViewController.m in Sources */,
+				BA496361224E5CB90098D85F /* NMTextField.m in Sources */,
 				BAA393B91E51859800B1F34D /* AppDelegate.m in Sources */,
 				BA8B466F214DFF9F00D9EC42 /* YHExcelTitleView.m in Sources */,
 				BA620096224616D5001F21B4 /* Carousel.m in Sources */,

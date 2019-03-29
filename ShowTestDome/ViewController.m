@@ -55,7 +55,8 @@
            @{@"title":@"类似Excel显示",@"vc":@"ExcelViewController"},
            @{@"title":@"类似QQ好友列表",@"vc":@"FoldingViewController"},
            @{@"title":@"视频和图片的混合轮播",@"vc":@"ImageVideoViewViewController"},
-           @{@"title":@"视频列表",@"vc":@"VideoListViewController"}];
+           @{@"title":@"视频列表",@"vc":@"VideoListViewController"},
+           @{@"title":@"UITextField泄漏问题",@"vc":@"LeaksViewController"}];
 }
 
 -(UITableView *)tableView
