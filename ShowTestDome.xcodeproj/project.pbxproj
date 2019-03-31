@@ -10,6 +10,7 @@
 		77502C9ADA7E7B76F17D4880 /* libPods-ShowTestDomeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF98B72F12E72D0AFDAD88FF /* libPods-ShowTestDomeTests.a */; };
 		7B6F13E5E89134F5368BFCC4 /* libPods-ShowTestDomeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C496B0DF6FB40F0DCD46BB /* libPods-ShowTestDomeUITests.a */; };
 		AA89F30ECC94914BCC19FE0E /* libPods-ShowTestDome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBDF11F9241304BE9C91564 /* libPods-ShowTestDome.a */; };
+		BA41C8E42250D118005BA4CF /* ThemeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BA41C8E32250D118005BA4CF /* ThemeButton.m */; };
 		BA47DCC41E89FE9400DFD7F5 /* IMG_0069.GIF in Resources */ = {isa = PBXBuildFile; fileRef = BA47DCBF1E89FE9400DFD7F5 /* IMG_0069.GIF */; };
 		BA47DCC51E89FE9400DFD7F5 /* IMG_0076.JPG in Resources */ = {isa = PBXBuildFile; fileRef = BA47DCC01E89FE9400DFD7F5 /* IMG_0076.JPG */; };
 		BA47DCC61E89FE9400DFD7F5 /* IMG_0148.GIF in Resources */ = {isa = PBXBuildFile; fileRef = BA47DCC11E89FE9400DFD7F5 /* IMG_0148.GIF */; };
@@ -87,6 +88,8 @@
 		2ACA4DAAB5EFAA9EFA849127 /* Pods-ShowTestDomeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowTestDomeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShowTestDomeUITests/Pods-ShowTestDomeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		34C496B0DF6FB40F0DCD46BB /* libPods-ShowTestDomeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShowTestDomeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63088B45333EBC25584B4E3 /* Pods-ShowTestDomeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowTestDomeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShowTestDomeTests/Pods-ShowTestDomeTests.release.xcconfig"; sourceTree = "<group>"; };
+		BA41C8E22250D118005BA4CF /* ThemeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThemeButton.h; sourceTree = "<group>"; };
+		BA41C8E32250D118005BA4CF /* ThemeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThemeButton.m; sourceTree = "<group>"; };
 		BA47DCBF1E89FE9400DFD7F5 /* IMG_0069.GIF */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = IMG_0069.GIF; sourceTree = "<group>"; };
 		BA47DCC01E89FE9400DFD7F5 /* IMG_0076.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0076.JPG; sourceTree = "<group>"; };
 		BA47DCC11E89FE9400DFD7F5 /* IMG_0148.GIF */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = IMG_0148.GIF; sourceTree = "<group>"; };
@@ -232,6 +235,15 @@
 				34C496B0DF6FB40F0DCD46BB /* libPods-ShowTestDomeUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA41C8E52250D11E005BA4CF /* ThemeButton */ = {
+			isa = PBXGroup;
+			children = (
+				BA41C8E22250D118005BA4CF /* ThemeButton.h */,
+				BA41C8E32250D118005BA4CF /* ThemeButton.m */,
+			);
+			path = ThemeButton;
 			sourceTree = "<group>";
 		};
 		BA47DCBE1E89FE9400DFD7F5 /* chatImage */ = {
@@ -385,6 +397,8 @@
 		BA8B465B214DFD4D00D9EC42 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				BA41C8E52250D11E005BA4CF /* ThemeButton */,
+				BAA393EA1E5186F500B1F34D /* UIView (Extension) */,
 				BA49635E224E5CB90098D85F /* NMTextField */,
 				BA6200AB224644ED001F21B4 /* VideoPlayView */,
 				BA620093224616AA001F21B4 /* Carousel */,
@@ -531,7 +545,6 @@
 				BA8B4660214DFE0800D9EC42 /* Cell */,
 				BA7CE0491E557C80002226D5 /* JSObject */,
 				BA834A5B1E5298ED0057DB88 /* delegate */,
-				BAA393EA1E5186F500B1F34D /* UIView (Extension) */,
 				BAA393BD1E51859900B1F34D /* Main.storyboard */,
 				BAA393C01E51859900B1F34D /* Assets.xcassets */,
 				BAA393C21E51859900B1F34D /* LaunchScreen.storyboard */,
@@ -817,6 +830,7 @@
 				BA834A561E5294F70057DB88 /* WebViewController.m in Sources */,
 				BA8B467B214E347A00D9EC42 /* FoldingViewController.m in Sources */,
 				BA496364224E61AA0098D85F /* TextField.m in Sources */,
+				BA41C8E42250D118005BA4CF /* ThemeButton.m in Sources */,
 				BA8B4683214E364B00D9EC42 /* FoldingSectionHeader.m in Sources */,
 				BA6200842245E720001F21B4 /* ShowGIFViewController.m in Sources */,
 				BA82C3C41E5D967B003B83FF /* ChatImageView.m in Sources */,
