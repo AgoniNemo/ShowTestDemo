@@ -38,15 +38,19 @@
     [btn setTitle:title forState:UIControlStateNormal];
     [btn setImage:[UIImage imageNamed:image]
          forState:UIControlStateNormal];
-    btn.imageView.hidden = btn.selected;
     btn.backgroundColor = btn.selected ? [UIColor whiteColor]:RGBACOLOR(230, 47, 92, 1);
     //设置边框颜色
     btn.layer.borderColor = btn.selected ? RGBACOLOR(245, 245, 245, 1).CGColor:[UIColor clearColor].CGColor;
     //设置边框宽度
-    btn.layer.borderWidth = btn.selected ? 2.0f : 0.0f;
+    btn.layer.borderWidth = btn.selected ? 2.0f : 1.0f;
     [btn mas_updateConstraints:^(MASConstraintMaker *make) {
         NSInteger w = btn.selected ? 52 : 80;
         make.width.mas_equalTo(w);
+    }];
+    
+    // 更新约束
+    [UIView animateWithDuration:0.5 animations:^{
+        [self.view layoutIfNeeded];
     }];
 }
 
