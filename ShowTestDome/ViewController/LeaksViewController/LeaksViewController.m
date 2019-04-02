@@ -8,7 +8,7 @@
 
 #import "LeaksViewController.h"
 #import "NMTextField.h"
-#import "ThemeButton.h"
+#import "TMeButton.h"
 
 @interface LeaksViewController ()
 @end
@@ -20,38 +20,15 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    ThemeButton *btn = [ThemeButton buttonWithType:UIButtonTypeCustom];
-    btn.backgroundColor = RGBACOLOR(230, 47, 92, 1);
-    [btn setTitle:@"Collect" forState:UIControlStateNormal];
+    TMeButton *btn = [TMeButton new];
+    btn.title = @"Collect";
+    btn.isSelect = NO;
     [self.view addSubview:btn];
     [btn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(80, 28));
         make.center.equalTo(self.view);
     }];
-    [btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
     
-}
--(void)btnAction:(UIButton *)btn {
-    btn.selected = !btn.selected;
-    NSString *title = btn.selected ? @"" : @"Collect";
-    NSString *image = btn.selected ? @"m_btn_success" : @"";
-    [btn setTitle:title forState:UIControlStateNormal];
-    [btn setImage:[UIImage imageNamed:image]
-         forState:UIControlStateNormal];
-    btn.backgroundColor = btn.selected ? [UIColor whiteColor]:RGBACOLOR(230, 47, 92, 1);
-    //设置边框颜色
-    btn.layer.borderColor = btn.selected ? RGBACOLOR(245, 245, 245, 1).CGColor:[UIColor clearColor].CGColor;
-    //设置边框宽度
-    btn.layer.borderWidth = btn.selected ? 2.0f : 1.0f;
-    [btn mas_updateConstraints:^(MASConstraintMaker *make) {
-        NSInteger w = btn.selected ? 52 : 80;
-        make.width.mas_equalTo(w);
-    }];
-    
-    // 更新约束
-    [UIView animateWithDuration:0.5 animations:^{
-        [self.view layoutIfNeeded];
-    }];
 }
 
 - (void)createTF{
