@@ -19,6 +19,11 @@
 		BA496359224E59760098D85F /* LeaksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA496358224E59760098D85F /* LeaksViewController.m */; };
 		BA496361224E5CB90098D85F /* NMTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BA496360224E5CB90098D85F /* NMTextField.m */; };
 		BA496364224E61AA0098D85F /* TextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BA496363224E61AA0098D85F /* TextField.m */; };
+		BA4C73FE2260928A00D49AF3 /* VideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4C73FD2260928A00D49AF3 /* VideoPlayer.m */; };
+		BA4C74012260937A00D49AF3 /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4C74002260937A00D49AF3 /* DownloadManager.m */; };
+		BA4C74072260943C00D49AF3 /* NSString+FileHandlePath.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4C74062260943C00D49AF3 /* NSString+FileHandlePath.m */; };
+		BA4C740A2260949100D49AF3 /* VideoPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4C74092260949100D49AF3 /* VideoPresenter.m */; };
+		BA4C740D226094AE00D49AF3 /* CustomVideoPlayerControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4C740C226094AE00D49AF3 /* CustomVideoPlayerControl.m */; };
 		BA6200842245E720001F21B4 /* ShowGIFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6200832245E720001F21B4 /* ShowGIFViewController.m */; };
 		BA62008D224614C5001F21B4 /* ImageVideoViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA62008C224614C5001F21B4 /* ImageVideoViewViewController.m */; };
 		BA620092224615AF001F21B4 /* ViewControllerConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = BA620091224615AF001F21B4 /* ViewControllerConfigure.m */; };
@@ -101,6 +106,16 @@
 		BA496360224E5CB90098D85F /* NMTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMTextField.m; sourceTree = "<group>"; };
 		BA496362224E61AA0098D85F /* TextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextField.h; sourceTree = "<group>"; };
 		BA496363224E61AA0098D85F /* TextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextField.m; sourceTree = "<group>"; };
+		BA4C73FC2260928A00D49AF3 /* VideoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPlayer.h; sourceTree = "<group>"; };
+		BA4C73FD2260928A00D49AF3 /* VideoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayer.m; sourceTree = "<group>"; };
+		BA4C73FF2260937A00D49AF3 /* DownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
+		BA4C74002260937A00D49AF3 /* DownloadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
+		BA4C74052260943C00D49AF3 /* NSString+FileHandlePath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+FileHandlePath.h"; sourceTree = "<group>"; };
+		BA4C74062260943C00D49AF3 /* NSString+FileHandlePath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FileHandlePath.m"; sourceTree = "<group>"; };
+		BA4C74082260949100D49AF3 /* VideoPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPresenter.h; sourceTree = "<group>"; };
+		BA4C74092260949100D49AF3 /* VideoPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPresenter.m; sourceTree = "<group>"; };
+		BA4C740B226094AE00D49AF3 /* CustomVideoPlayerControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomVideoPlayerControl.h; sourceTree = "<group>"; };
+		BA4C740C226094AE00D49AF3 /* CustomVideoPlayerControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomVideoPlayerControl.m; sourceTree = "<group>"; };
 		BA6200822245E720001F21B4 /* ShowGIFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowGIFViewController.h; sourceTree = "<group>"; };
 		BA6200832245E720001F21B4 /* ShowGIFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowGIFViewController.m; sourceTree = "<group>"; };
 		BA62008622460A3C001F21B4 /* MacroDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDefinition.h; sourceTree = "<group>"; };
@@ -278,6 +293,23 @@
 			path = NMTextField;
 			sourceTree = "<group>";
 		};
+		BA4C73FB2260923400D49AF3 /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				BA4C740B226094AE00D49AF3 /* CustomVideoPlayerControl.h */,
+				BA4C740C226094AE00D49AF3 /* CustomVideoPlayerControl.m */,
+				BA4C73FC2260928A00D49AF3 /* VideoPlayer.h */,
+				BA4C73FD2260928A00D49AF3 /* VideoPlayer.m */,
+				BA4C73FF2260937A00D49AF3 /* DownloadManager.h */,
+				BA4C74002260937A00D49AF3 /* DownloadManager.m */,
+				BA4C74052260943C00D49AF3 /* NSString+FileHandlePath.h */,
+				BA4C74062260943C00D49AF3 /* NSString+FileHandlePath.m */,
+				BA4C74082260949100D49AF3 /* VideoPresenter.h */,
+				BA4C74092260949100D49AF3 /* VideoPresenter.m */,
+			);
+			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
 		BA62008522460A3C001F21B4 /* Define */ = {
 			isa = PBXGroup;
 			children = (
@@ -397,6 +429,7 @@
 		BA8B465B214DFD4D00D9EC42 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				BA4C73FB2260923400D49AF3 /* VideoPlayer */,
 				BA41C8E52250D11E005BA4CF /* ThemeButton */,
 				BAA393EA1E5186F500B1F34D /* UIView (Extension) */,
 				BA49635E224E5CB90098D85F /* NMTextField */,
@@ -830,6 +863,7 @@
 				BA834A561E5294F70057DB88 /* WebViewController.m in Sources */,
 				BA8B467B214E347A00D9EC42 /* FoldingViewController.m in Sources */,
 				BA496364224E61AA0098D85F /* TextField.m in Sources */,
+				BA4C73FE2260928A00D49AF3 /* VideoPlayer.m in Sources */,
 				BA38374E2253AB4C00704BB6 /* TMeButton.m in Sources */,
 				BA8B4683214E364B00D9EC42 /* FoldingSectionHeader.m in Sources */,
 				BA6200842245E720001F21B4 /* ShowGIFViewController.m in Sources */,
@@ -840,13 +874,16 @@
 				BA834A591E5295080057DB88 /* TestViewController.m in Sources */,
 				BA834A5F1E5298ED0057DB88 /* WeakScriptMessageDelegate.m in Sources */,
 				BA6A5E811E67F78F00986F22 /* TestOneTableViewCell.m in Sources */,
+				BA4C740D226094AE00D49AF3 /* CustomVideoPlayerControl.m in Sources */,
 				BA8B466D214DFF9F00D9EC42 /* YHExcelView.m in Sources */,
 				BA496359224E59760098D85F /* LeaksViewController.m in Sources */,
 				BAA393BC1E51859800B1F34D /* ViewController.m in Sources */,
+				BA4C74012260937A00D49AF3 /* DownloadManager.m in Sources */,
 				BA496361224E5CB90098D85F /* NMTextField.m in Sources */,
 				BAA393B91E51859800B1F34D /* AppDelegate.m in Sources */,
 				BA8B466F214DFF9F00D9EC42 /* YHExcelTitleView.m in Sources */,
 				BA620096224616D5001F21B4 /* Carousel.m in Sources */,
+				BA4C74072260943C00D49AF3 /* NSString+FileHandlePath.m in Sources */,
 				BA8B4685214E364B00D9EC42 /* FoldingModel.m in Sources */,
 				BA8B4670214DFF9F00D9EC42 /* YHExcelViewColumn.m in Sources */,
 				BA6200AA2246355A001F21B4 /* VideoModel.m in Sources */,
@@ -863,6 +900,7 @@
 				BA6200AE22464553001F21B4 /* VideoPlayView.m in Sources */,
 				BA8B466E214DFF9F00D9EC42 /* YHExcelViewIndexPath.m in Sources */,
 				BA8B4684214E364B00D9EC42 /* FoldingTableView.m in Sources */,
+				BA4C740A2260949100D49AF3 /* VideoPresenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
