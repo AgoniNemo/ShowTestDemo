@@ -14,6 +14,7 @@ def base_pods
     pod 'FLAnimatedImage'
     pod 'Aspects'
     pod 'MLeaksFinder', :configuration => 'Debug'
+    pod 'BRPickerView'
 end
 
 target 'ShowTestDome' do

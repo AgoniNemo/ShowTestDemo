@@ -56,7 +56,8 @@
            @{@"title":@"类似QQ好友列表",@"vc":@"FoldingViewController"},
            @{@"title":@"视频和图片的混合轮播",@"vc":@"ImageVideoViewViewController"},
            @{@"title":@"视频列表",@"vc":@"VideoListViewController"},
-           @{@"title":@"UITextField泄漏问题",@"vc":@"LeaksViewController"}];
+           @{@"title":@"UITextField泄漏问题",@"vc":@"LeaksViewController"},
+           @{@"title":@"BRPicker选择器",@"vc":@"BRPickerViewViewController"}];
 }
 
 -(UITableView *)tableView

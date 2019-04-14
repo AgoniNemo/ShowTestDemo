@@ -10,6 +10,7 @@
 		77502C9ADA7E7B76F17D4880 /* libPods-ShowTestDomeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF98B72F12E72D0AFDAD88FF /* libPods-ShowTestDomeTests.a */; };
 		7B6F13E5E89134F5368BFCC4 /* libPods-ShowTestDomeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C496B0DF6FB40F0DCD46BB /* libPods-ShowTestDomeUITests.a */; };
 		AA89F30ECC94914BCC19FE0E /* libPods-ShowTestDome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBDF11F9241304BE9C91564 /* libPods-ShowTestDome.a */; };
+		BA1E8FBB226367B70053691C /* BRPickerViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1E8FBA226367B70053691C /* BRPickerViewViewController.m */; };
 		BA38374E2253AB4C00704BB6 /* TMeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BA38374D2253AB4C00704BB6 /* TMeButton.m */; };
 		BA47DCC41E89FE9400DFD7F5 /* IMG_0069.GIF in Resources */ = {isa = PBXBuildFile; fileRef = BA47DCBF1E89FE9400DFD7F5 /* IMG_0069.GIF */; };
 		BA47DCC51E89FE9400DFD7F5 /* IMG_0076.JPG in Resources */ = {isa = PBXBuildFile; fileRef = BA47DCC01E89FE9400DFD7F5 /* IMG_0076.JPG */; };
@@ -93,6 +94,8 @@
 		2ACA4DAAB5EFAA9EFA849127 /* Pods-ShowTestDomeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowTestDomeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShowTestDomeUITests/Pods-ShowTestDomeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		34C496B0DF6FB40F0DCD46BB /* libPods-ShowTestDomeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShowTestDomeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63088B45333EBC25584B4E3 /* Pods-ShowTestDomeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowTestDomeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShowTestDomeTests/Pods-ShowTestDomeTests.release.xcconfig"; sourceTree = "<group>"; };
+		BA1E8FB9226367B70053691C /* BRPickerViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRPickerViewViewController.h; sourceTree = "<group>"; };
+		BA1E8FBA226367B70053691C /* BRPickerViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRPickerViewViewController.m; sourceTree = "<group>"; };
 		BA38374C2253AB4C00704BB6 /* TMeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMeButton.h; sourceTree = "<group>"; };
 		BA38374D2253AB4C00704BB6 /* TMeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMeButton.m; sourceTree = "<group>"; };
 		BA47DCBF1E89FE9400DFD7F5 /* IMG_0069.GIF */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = IMG_0069.GIF; sourceTree = "<group>"; };
@@ -250,6 +253,96 @@
 				34C496B0DF6FB40F0DCD46BB /* libPods-ShowTestDomeUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA1E8FAF2263672F0053691C /* ShowGIFViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BA6200822245E720001F21B4 /* ShowGIFViewController.h */,
+				BA6200832245E720001F21B4 /* ShowGIFViewController.m */,
+			);
+			path = ShowGIFViewController;
+			sourceTree = "<group>";
+		};
+		BA1E8FB02263673C0053691C /* UIWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BA7CE0461E557B78002226D5 /* UIWebViewController.h */,
+				BA7CE0471E557B78002226D5 /* UIWebViewController.m */,
+			);
+			path = UIWebViewController;
+			sourceTree = "<group>";
+		};
+		BA1E8FB1226367470053691C /* TestViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BA834A571E5295080057DB88 /* TestViewController.h */,
+				BA834A581E5295080057DB88 /* TestViewController.m */,
+			);
+			path = TestViewController;
+			sourceTree = "<group>";
+		};
+		BA1E8FB2226367560053691C /* ASViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BA7EFC49214A8CDA008C154D /* ASViewController.h */,
+				BA7EFC4A214A8CDA008C154D /* ASViewController.m */,
+			);
+			path = ASViewController;
+			sourceTree = "<group>";
+		};
+		BA1E8FB3226367630053691C /* WebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BA834A541E5294F70057DB88 /* WebViewController.h */,
+				BA834A551E5294F70057DB88 /* WebViewController.m */,
+			);
+			path = WebViewController;
+			sourceTree = "<group>";
+		};
+		BA1E8FB42263676E0053691C /* CaptionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BA7EFC3E214A8C3C008C154D /* CaptionViewController.h */,
+				BA7EFC3F214A8C3C008C154D /* CaptionViewController.m */,
+			);
+			path = CaptionViewController;
+			sourceTree = "<group>";
+		};
+		BA1E8FB52263677C0053691C /* ExcelViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BA8B4672214DFFBC00D9EC42 /* ExcelViewController.h */,
+				BA8B4673214DFFBC00D9EC42 /* ExcelViewController.m */,
+			);
+			path = ExcelViewController;
+			sourceTree = "<group>";
+		};
+		BA1E8FB6226367850053691C /* FoldingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BA8B4679214E347A00D9EC42 /* FoldingViewController.h */,
+				BA8B467A214E347A00D9EC42 /* FoldingViewController.m */,
+			);
+			path = FoldingViewController;
+			sourceTree = "<group>";
+		};
+		BA1E8FB72263678F0053691C /* ImageVideoViewViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BA62008B224614C5001F21B4 /* ImageVideoViewViewController.h */,
+				BA62008C224614C5001F21B4 /* ImageVideoViewViewController.m */,
+			);
+			path = ImageVideoViewViewController;
+			sourceTree = "<group>";
+		};
+		BA1E8FB82263679E0053691C /* BRPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				BA1E8FB9226367B70053691C /* BRPickerViewViewController.h */,
+				BA1E8FBA226367B70053691C /* BRPickerViewViewController.m */,
+			);
+			path = BRPickerView;
 			sourceTree = "<group>";
 		};
 		BA41C8E52250D11E005BA4CF /* ThemeButton */ = {
@@ -448,26 +541,18 @@
 		BA8B465C214DFD9700D9EC42 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BA1E8FB82263679E0053691C /* BRPickerView */,
+				BA1E8FB72263678F0053691C /* ImageVideoViewViewController */,
+				BA1E8FB6226367850053691C /* FoldingViewController */,
+				BA1E8FB52263677C0053691C /* ExcelViewController */,
+				BA1E8FB42263676E0053691C /* CaptionViewController */,
+				BA1E8FB3226367630053691C /* WebViewController */,
+				BA1E8FB2226367560053691C /* ASViewController */,
+				BA1E8FB1226367470053691C /* TestViewController */,
+				BA1E8FB02263673C0053691C /* UIWebViewController */,
+				BA1E8FAF2263672F0053691C /* ShowGIFViewController */,
 				BA496356224E59260098D85F /* LeaksViewController */,
 				BA6200A522463517001F21B4 /* VideoListViewController */,
-				BA6200822245E720001F21B4 /* ShowGIFViewController.h */,
-				BA6200832245E720001F21B4 /* ShowGIFViewController.m */,
-				BA7CE0461E557B78002226D5 /* UIWebViewController.h */,
-				BA7CE0471E557B78002226D5 /* UIWebViewController.m */,
-				BA834A571E5295080057DB88 /* TestViewController.h */,
-				BA834A581E5295080057DB88 /* TestViewController.m */,
-				BA7EFC49214A8CDA008C154D /* ASViewController.h */,
-				BA7EFC4A214A8CDA008C154D /* ASViewController.m */,
-				BA834A541E5294F70057DB88 /* WebViewController.h */,
-				BA834A551E5294F70057DB88 /* WebViewController.m */,
-				BA7EFC3E214A8C3C008C154D /* CaptionViewController.h */,
-				BA7EFC3F214A8C3C008C154D /* CaptionViewController.m */,
-				BA8B4672214DFFBC00D9EC42 /* ExcelViewController.h */,
-				BA8B4673214DFFBC00D9EC42 /* ExcelViewController.m */,
-				BA8B4679214E347A00D9EC42 /* FoldingViewController.h */,
-				BA8B467A214E347A00D9EC42 /* FoldingViewController.m */,
-				BA62008B224614C5001F21B4 /* ImageVideoViewViewController.h */,
-				BA62008C224614C5001F21B4 /* ImageVideoViewViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -801,10 +886,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ShowTestDome/Pods-ShowTestDome-resources.sh",
+				"${PODS_ROOT}/BRPickerView/BRPickerView/AddressPickerView/BRPickerView.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BRPickerView.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -891,6 +978,7 @@
 				BA6200992246170B001F21B4 /* VideoView.m in Sources */,
 				BAA393B61E51859800B1F34D /* main.m in Sources */,
 				BA62009C2246172D001F21B4 /* VideoMaskView.m in Sources */,
+				BA1E8FBB226367B70053691C /* BRPickerViewViewController.m in Sources */,
 				BA8B4674214DFFBC00D9EC42 /* ExcelViewController.m in Sources */,
 				BAA393E91E5185B000B1F34D /* ShowLable.m in Sources */,
 				BA7EFC40214A8C3C008C154D /* CaptionViewController.m in Sources */,
