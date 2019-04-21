@@ -26,9 +26,9 @@ typedef BOOL(^TimerBlock)(NSDate *date);
     
 //    [self creatLeftBubble];
 //    
-    [self creatRightBubble];
+//    [self creatRightBubble];
 //
-//    [self createBubbon];
+    [self createBubbon];
     
 //    [self creatModel];
 }
@@ -44,11 +44,17 @@ typedef BOOL(^TimerBlock)(NSDate *date);
 }
 -(void)createBubbon{
 
-    UIImage *image = [UIImage imageNamed:@"1"];
-    ChatImageView *imgV = [[ChatImageView alloc] initWithFrame:CGRectMake(100, 330, image.size.width/10, image.size.height/10)];
-    imgV.maskImage = [UIImage imageNamed:@"chat_sender_bg"];
+    UIImage *image = [UIImage imageNamed:@"6"];
+    ChatImageView *imgV = [[ChatImageView alloc] init];
+    imgV.maskImage = [UIImage imageNamed:@"im_bubble_bg_f"];
     imgV.contentImage = image;
     [self.view addSubview:imgV];
+    
+    [imgV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.mas_offset(100);
+        make.height.mas_equalTo(330);
+        make.center.equalTo(self);
+    }];
 
 }
 
