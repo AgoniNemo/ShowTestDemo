@@ -11,6 +11,7 @@
 		7B6F13E5E89134F5368BFCC4 /* libPods-ShowTestDomeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C496B0DF6FB40F0DCD46BB /* libPods-ShowTestDomeUITests.a */; };
 		AA89F30ECC94914BCC19FE0E /* libPods-ShowTestDome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBDF11F9241304BE9C91564 /* libPods-ShowTestDome.a */; };
 		BA1E8FBB226367B70053691C /* BRPickerViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1E8FBA226367B70053691C /* BRPickerViewViewController.m */; };
+		BA271AD32270A23400944168 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA271AD22270A23400944168 /* ActivityViewController.m */; };
 		BA38374E2253AB4C00704BB6 /* TMeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BA38374D2253AB4C00704BB6 /* TMeButton.m */; };
 		BA47DCC41E89FE9400DFD7F5 /* IMG_0069.GIF in Resources */ = {isa = PBXBuildFile; fileRef = BA47DCBF1E89FE9400DFD7F5 /* IMG_0069.GIF */; };
 		BA47DCC51E89FE9400DFD7F5 /* IMG_0076.JPG in Resources */ = {isa = PBXBuildFile; fileRef = BA47DCC01E89FE9400DFD7F5 /* IMG_0076.JPG */; };
@@ -96,6 +97,8 @@
 		B63088B45333EBC25584B4E3 /* Pods-ShowTestDomeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowTestDomeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShowTestDomeTests/Pods-ShowTestDomeTests.release.xcconfig"; sourceTree = "<group>"; };
 		BA1E8FB9226367B70053691C /* BRPickerViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRPickerViewViewController.h; sourceTree = "<group>"; };
 		BA1E8FBA226367B70053691C /* BRPickerViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRPickerViewViewController.m; sourceTree = "<group>"; };
+		BA271AD12270A23400944168 /* ActivityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
+		BA271AD22270A23400944168 /* ActivityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
 		BA38374C2253AB4C00704BB6 /* TMeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMeButton.h; sourceTree = "<group>"; };
 		BA38374D2253AB4C00704BB6 /* TMeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMeButton.m; sourceTree = "<group>"; };
 		BA47DCBF1E89FE9400DFD7F5 /* IMG_0069.GIF */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = IMG_0069.GIF; sourceTree = "<group>"; };
@@ -345,6 +348,15 @@
 			path = BRPickerView;
 			sourceTree = "<group>";
 		};
+		BA271AD02270A20D00944168 /* UIActivityViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BA271AD12270A23400944168 /* ActivityViewController.h */,
+				BA271AD22270A23400944168 /* ActivityViewController.m */,
+			);
+			path = UIActivityViewController;
+			sourceTree = "<group>";
+		};
 		BA41C8E52250D11E005BA4CF /* ThemeButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -541,6 +553,7 @@
 		BA8B465C214DFD9700D9EC42 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BA271AD02270A20D00944168 /* UIActivityViewController */,
 				BA1E8FB82263679E0053691C /* BRPickerView */,
 				BA1E8FB72263678F0053691C /* ImageVideoViewViewController */,
 				BA1E8FB6226367850053691C /* FoldingViewController */,
@@ -973,6 +986,7 @@
 				BA4C74072260943C00D49AF3 /* NSString+FileHandlePath.m in Sources */,
 				BA8B4685214E364B00D9EC42 /* FoldingModel.m in Sources */,
 				BA8B4670214DFF9F00D9EC42 /* YHExcelViewColumn.m in Sources */,
+				BA271AD32270A23400944168 /* ActivityViewController.m in Sources */,
 				BA6200AA2246355A001F21B4 /* VideoModel.m in Sources */,
 				BA7CE0481E557B78002226D5 /* UIWebViewController.m in Sources */,
 				BA6200992246170B001F21B4 /* VideoView.m in Sources */,

@@ -18,8 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.tableView];
-    
+
 }
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.dataSource.count;
@@ -57,7 +58,8 @@
            @{@"title":@"视频和图片的混合轮播",@"vc":@"ImageVideoViewViewController"},
            @{@"title":@"视频列表",@"vc":@"VideoListViewController"},
            @{@"title":@"UITextField泄漏问题",@"vc":@"LeaksViewController"},
-           @{@"title":@"BRPicker选择器",@"vc":@"BRPickerViewViewController"}];
+           @{@"title":@"BRPicker选择器",@"vc":@"BRPickerViewViewController"},
+           @{@"title":@"原生分享",@"vc":@"ActivityViewController"}];
 }
 
 -(UITableView *)tableView
