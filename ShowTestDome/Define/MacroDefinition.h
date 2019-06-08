@@ -10,6 +10,8 @@
 #define MacroDefinition_h
 
 #define HOMECOLOR RGBCOLOR(112,112,112)
+#define MAINCOLOR RGBACOLOR(34, 34, 34, 1)
+#define REDCOLOR RGBACOLOR(230, 47, 92, 1)
 
 //获取系统对象
 #define kApplication        [UIApplication sharedApplication]
@@ -29,6 +31,8 @@
 #define AdjustsScrollViewInsetNever(controller,view) if(@available(iOS 11.0, *)) {view.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;} else if([controller isKindOfClass:[UIViewController class]]) {controller.automaticallyAdjustsScrollViewInsets = false;}
 
 #define iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define kStatusBarAndNavigationBarHeight (SCREENHEIGHT >= 812.0 ? 88.f : 64.f)
 
 #pragma mark ————— UICOLOR宏方法 —————
 /**

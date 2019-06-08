@@ -7,103 +7,96 @@
 //
 
 #import "UIView+Extension.h"
+#import <objc/runtime.h>
+
+
+@interface UIView()<CAAnimationDelegate>
+@property (nonatomic, strong) CALayer *cLy;
+@property (nonatomic, copy) animationFinisnBlock block ;
+@end
 
 @implementation UIView (Extension)
-- (void)setX:(CGFloat)x
+
+- (void)playAnimationForEndPoint:(CGPoint)point completion:(animationFinisnBlock)completion{
+    /// a -> b -> 结束点
+    UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
+    CGRect rect = [self convertRect:self.bounds toView:keyWindow];
+    
+    self.cLy = [CALayer layer];
+    self.cLy.contents = self.layer.contents;
+    self.cLy.contentsGravity = kCAGravityResizeAspectFill;
+    rect.size.width  = 16;
+    rect.size.height = 16;   //重置图层尺寸
+    self.cLy.bounds = rect;
+    self.cLy.cornerRadius  = rect.size.width/2;
+    self.cLy.masksToBounds = YES;          //圆角
+    self.cLy.backgroundColor = RGBCOLOR(230, 47, 92).CGColor;
+    
+    [keyWindow.layer addSublayer:self.cLy];
+
+    self.cLy.position = CGPointMake(rect.origin.x+self.frame.size.width/2, CGRectGetMidY(rect)); //a 点
+    
+    /// 路径动画
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    [path moveToPoint:self.cLy.position];
+    /// 第一个参数为结束点  第二参数为上升的b点
+    [path addQuadCurveToPoint:point controlPoint:CGPointMake(SCREENWIDTH/2, rect.origin.y-80)];
+    CAKeyframeAnimation *pathAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+    pathAnimation.path = path.CGPath;
+    /// 旋转动画
+    CABasicAnimation *rotateAnimation   = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
+    rotateAnimation.removedOnCompletion = YES;
+    rotateAnimation.fromValue = [NSNumber numberWithFloat:0];
+    rotateAnimation.toValue   = [NSNumber numberWithFloat:12];
+    rotateAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+    /// 添加动画动画组合
+    CAAnimationGroup *groups = [CAAnimationGroup animation];
+    groups.animations = @[pathAnimation,rotateAnimation];
+    groups.duration = 0.6f;
+    groups.removedOnCompletion = NO;
+    groups.fillMode=kCAFillModeForwards;
+    groups.delegate = self;
+    [self.cLy addAnimation:groups forKey:@"group"];
+    
+    self.block = completion;
+}
+#pragma mark - CAAnimationDelegate
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
 {
-    CGRect frame = self.frame;
-    frame.origin.x = x;
-    self.frame = frame;
+    if (anim == [self.cLy animationForKey:@"group"]) {
+        [self.cLy removeFromSuperlayer];
+        self.cLy = nil;
+        if (self.block) {
+            self.block();
+        }
+    }
 }
 
-- (void)setY:(CGFloat)y
-{
-    CGRect frame = self.frame;
-    frame.origin.y = y;
-    self.frame = frame;
+
+static void *strKey = &strKey;
+static void *blockKey = &blockKey;
+-(void)setCLy:(CALayer *)cLy {
+    objc_setAssociatedObject(self, &strKey, cLy, OBJC_ASSOCIATION_RETAIN);
+}
+-(CALayer *)cLy {
+    return objc_getAssociatedObject(self, &strKey);
 }
 
-- (CGFloat)x
-{
-    return self.frame.origin.x;
+-(void)setBlock:(animationFinisnBlock)block {
+    objc_setAssociatedObject(self, &blockKey, block, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
-- (CGFloat)y
-{
-    return self.frame.origin.y;
+-(animationFinisnBlock)block {
+    return objc_getAssociatedObject(self, &blockKey);
 }
 
-- (void)setCenterX:(CGFloat)centerX
-{
-    CGPoint center = self.center;
-    center.x = centerX;
-    self.center = center;
+-(void)addGestureRecognizerBlock:(void (^)(id _Nonnull))block{
+    self.userInteractionEnabled = YES;
+//    [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithActionBlock:^(id  _Nonnull sender) {
+//        if (block) {
+//            block(sender);
+//        }
+//    }]];
 }
-
-- (CGFloat)centerX
-{
-    return self.center.x;
-}
-
-- (void)setCenterY:(CGFloat)centerY
-{
-    CGPoint center = self.center;
-    center.y = centerY;
-    self.center = center;
-}
-
-- (CGFloat)centerY
-{
-    return self.center.y;
-}
-
-- (void)setWidth:(CGFloat)width
-{
-    CGRect frame = self.frame;
-    frame.size.width = width;
-    self.frame = frame;
-}
-
-- (void)setHeight:(CGFloat)height
-{
-    CGRect frame = self.frame;
-    frame.size.height = height;
-    self.frame = frame;
-}
-
-- (CGFloat)height
-{
-    return self.frame.size.height;
-}
-
-- (CGFloat)width
-{
-    return self.frame.size.width;
-}
-
-- (void)setSize:(CGSize)size
-{
-    CGRect frame = self.frame;
-    frame.size = size;
-    self.frame = frame;
-}
-
-- (CGSize)size
-{
-    return self.frame.size;
-}
-
-- (void)setOrigin:(CGPoint)origin
-{
-    CGRect frame = self.frame;
-    frame.origin = origin;
-    self.frame = frame;
-}
-
-- (CGPoint)origin
-{
-    return self.frame.origin;
-}
-
 
 @end

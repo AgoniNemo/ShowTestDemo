@@ -7,7 +7,7 @@
 //
 
 #import "ShowLable.h"
-#import "UIView+Extension.h"
+#import "UIView+Size.h"
 
 @interface ShowLable ()
 {

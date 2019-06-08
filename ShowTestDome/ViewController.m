@@ -18,7 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.tableView];
-
+    
+    UIViewController *vc = [[NSClassFromString(@"SlideViewViewController") alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -47,7 +49,8 @@
 }
 -(NSArray *)dataSource
 {
-  return @[@{@"title":@"WKWebView演示iOS传值到Web",@"vc":@"WebViewController"},
+  return @[@{@"title":@"SlideView",@"vc":@"SlideViewViewController"},
+           @{@"title":@"WKWebView演示iOS传值到Web",@"vc":@"WebViewController"},
            @{@"title":@"聊天气泡",@"vc":@"TestViewController"},
            @{@"title":@"加载打包web",@"vc":@"UIWebViewController"},
            @{@"title":@"显示GIF",@"vc":@"ShowGIFViewController"},
@@ -59,7 +62,8 @@
            @{@"title":@"视频列表",@"vc":@"VideoListViewController"},
            @{@"title":@"UITextField泄漏问题",@"vc":@"LeaksViewController"},
            @{@"title":@"BRPicker选择器",@"vc":@"BRPickerViewViewController"},
-           @{@"title":@"原生分享",@"vc":@"ActivityViewController"}];
+           @{@"title":@"原生分享",@"vc":@"ActivityViewController"},
+           @{@"title":@"星星",@"vc":@"StarViewController"}];
 }
 
 -(UITableView *)tableView

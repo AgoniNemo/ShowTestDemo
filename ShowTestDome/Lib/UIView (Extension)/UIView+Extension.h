@@ -8,15 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^animationFinisnBlock)(void);
+
 @interface UIView (Extension)
 
-@property (nonatomic, assign) CGFloat x;
-@property (nonatomic, assign) CGFloat y;
-@property (nonatomic, assign) CGFloat centerX;
-@property (nonatomic, assign) CGFloat centerY;
-@property (nonatomic, assign) CGFloat width;
-@property (nonatomic, assign) CGFloat height;
-@property (nonatomic, assign) CGSize size;
-@property (nonatomic, assign) CGPoint origin;
+- (void)addGestureRecognizerBlock:(void(^_Nullable)(id  _Nonnull sender))block;
+
+- (void)playAnimationForEndPoint:(CGPoint)point completion:(animationFinisnBlock _Nullable )completion;
 
 @end

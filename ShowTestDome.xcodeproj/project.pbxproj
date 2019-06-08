@@ -61,6 +61,8 @@
 		BA8B4683214E364B00D9EC42 /* FoldingSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8B467E214E364B00D9EC42 /* FoldingSectionHeader.m */; };
 		BA8B4684214E364B00D9EC42 /* FoldingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8B4680214E364B00D9EC42 /* FoldingTableView.m */; };
 		BA8B4685214E364B00D9EC42 /* FoldingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8B4682214E364B00D9EC42 /* FoldingModel.m */; };
+		BA8C5F3122A2BCC9009A06A9 /* NMRatingControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8C5F3022A2BCC9009A06A9 /* NMRatingControl.m */; };
+		BA8C5F3522A2BD82009A06A9 /* StarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8C5F3422A2BD82009A06A9 /* StarViewController.m */; };
 		BAA393B61E51859800B1F34D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA393B51E51859800B1F34D /* main.m */; };
 		BAA393B91E51859800B1F34D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA393B81E51859800B1F34D /* AppDelegate.m */; };
 		BAA393BC1E51859800B1F34D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA393BB1E51859800B1F34D /* ViewController.m */; };
@@ -70,7 +72,17 @@
 		BAA393CF1E51859900B1F34D /* ShowTestDomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA393CE1E51859900B1F34D /* ShowTestDomeTests.m */; };
 		BAA393DA1E51859900B1F34D /* ShowTestDomeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA393D91E51859900B1F34D /* ShowTestDomeUITests.m */; };
 		BAA393E91E5185B000B1F34D /* ShowLable.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA393E81E5185B000B1F34D /* ShowLable.m */; };
-		BAA393ED1E5186F500B1F34D /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA393EC1E5186F500B1F34D /* UIView+Extension.m */; };
+		BAA5001E22AA77630076EC4F /* SlideViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA5001D22AA77630076EC4F /* SlideViewViewController.m */; };
+		BAA5002922AB61210076EC4F /* XZCScrollerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA5002522AB61210076EC4F /* XZCScrollerButton.m */; };
+		BAA5002A22AB61210076EC4F /* NemoScrollerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA5002622AB61210076EC4F /* NemoScrollerView.m */; };
+		BAA5002B22AB61210076EC4F /* XZCScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA5002822AB61210076EC4F /* XZCScrollView.m */; };
+		BAA5004322AB63960076EC4F /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA5003E22AB63950076EC4F /* UIView+Animation.m */; };
+		BAA5004422AB63960076EC4F /* UIView+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA5003F22AB63950076EC4F /* UIView+Size.m */; };
+		BAA5004522AB63960076EC4F /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA5004022AB63950076EC4F /* UIView+Extension.m */; };
+		BAA5004622AB63960076EC4F /* UIView+Corners.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA5004222AB63950076EC4F /* UIView+Corners.m */; };
+		BAA5005022AB6B300076EC4F /* NSString+Celestia.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA5004922AB6B300076EC4F /* NSString+Celestia.m */; };
+		BAA5005222AB6B300076EC4F /* NSString+regex.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA5004D22AB6B300076EC4F /* NSString+regex.m */; };
+		BAA5005322AB6B300076EC4F /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA5004F22AB6B300076EC4F /* NSString+Size.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -193,6 +205,10 @@
 		BA8B4680214E364B00D9EC42 /* FoldingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoldingTableView.m; sourceTree = "<group>"; };
 		BA8B4681214E364B00D9EC42 /* FoldingSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldingSectionHeader.h; sourceTree = "<group>"; };
 		BA8B4682214E364B00D9EC42 /* FoldingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoldingModel.m; sourceTree = "<group>"; };
+		BA8C5F2F22A2BCC9009A06A9 /* NMRatingControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMRatingControl.h; sourceTree = "<group>"; };
+		BA8C5F3022A2BCC9009A06A9 /* NMRatingControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMRatingControl.m; sourceTree = "<group>"; };
+		BA8C5F3322A2BD82009A06A9 /* StarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StarViewController.h; sourceTree = "<group>"; };
+		BA8C5F3422A2BD82009A06A9 /* StarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarViewController.m; sourceTree = "<group>"; };
 		BAA393B11E51859800B1F34D /* ShowTestDome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShowTestDome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA393B51E51859800B1F34D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BAA393B71E51859800B1F34D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -211,8 +227,28 @@
 		BAA393DB1E51859900B1F34D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAA393E71E5185B000B1F34D /* ShowLable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowLable.h; sourceTree = "<group>"; };
 		BAA393E81E5185B000B1F34D /* ShowLable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowLable.m; sourceTree = "<group>"; };
-		BAA393EB1E5186F500B1F34D /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
-		BAA393EC1E5186F500B1F34D /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		BAA5001C22AA77630076EC4F /* SlideViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideViewViewController.h; sourceTree = "<group>"; };
+		BAA5001D22AA77630076EC4F /* SlideViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideViewViewController.m; sourceTree = "<group>"; };
+		BAA5002322AB61210076EC4F /* NemoScrollerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NemoScrollerView.h; sourceTree = "<group>"; };
+		BAA5002422AB61210076EC4F /* XZCScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCScrollView.h; sourceTree = "<group>"; };
+		BAA5002522AB61210076EC4F /* XZCScrollerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCScrollerButton.m; sourceTree = "<group>"; };
+		BAA5002622AB61210076EC4F /* NemoScrollerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NemoScrollerView.m; sourceTree = "<group>"; };
+		BAA5002722AB61210076EC4F /* XZCScrollerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCScrollerButton.h; sourceTree = "<group>"; };
+		BAA5002822AB61210076EC4F /* XZCScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCScrollView.m; sourceTree = "<group>"; };
+		BAA5003B22AB63950076EC4F /* UIView+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Size.h"; sourceTree = "<group>"; };
+		BAA5003C22AB63950076EC4F /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		BAA5003D22AB63950076EC4F /* UIView+Corners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Corners.h"; sourceTree = "<group>"; };
+		BAA5003E22AB63950076EC4F /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
+		BAA5003F22AB63950076EC4F /* UIView+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Size.m"; sourceTree = "<group>"; };
+		BAA5004022AB63950076EC4F /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		BAA5004122AB63950076EC4F /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
+		BAA5004222AB63950076EC4F /* UIView+Corners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Corners.m"; sourceTree = "<group>"; };
+		BAA5004922AB6B300076EC4F /* NSString+Celestia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Celestia.m"; sourceTree = "<group>"; };
+		BAA5004A22AB6B300076EC4F /* NSString+regex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+regex.h"; sourceTree = "<group>"; };
+		BAA5004B22AB6B300076EC4F /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
+		BAA5004D22AB6B300076EC4F /* NSString+regex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+regex.m"; sourceTree = "<group>"; };
+		BAA5004E22AB6B300076EC4F /* NSString+Celestia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Celestia.h"; sourceTree = "<group>"; };
+		BAA5004F22AB6B300076EC4F /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
 		BF98B72F12E72D0AFDAD88FF /* libPods-ShowTestDomeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShowTestDomeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C089AB00A7B355DDB1EC9E3D /* Pods-ShowTestDomeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowTestDomeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShowTestDomeUITests/Pods-ShowTestDomeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CFBDF11F9241304BE9C91564 /* libPods-ShowTestDome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShowTestDome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -534,9 +570,13 @@
 		BA8B465B214DFD4D00D9EC42 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				BAA5004722AB6B300076EC4F /* NSString(Extension) */,
+				BAA5003A22AB63950076EC4F /* UIView (Extension) */,
+				BAA5003922AB63590076EC4F /* New Group */,
+				BAA5002222AB61210076EC4F /* XZCScrollView */,
+				BA8C5F2E22A2BC92009A06A9 /* RatingControl */,
 				BA4C73FB2260923400D49AF3 /* VideoPlayer */,
 				BA41C8E52250D11E005BA4CF /* ThemeButton */,
-				BAA393EA1E5186F500B1F34D /* UIView (Extension) */,
 				BA49635E224E5CB90098D85F /* NMTextField */,
 				BA6200AB224644ED001F21B4 /* VideoPlayView */,
 				BA620093224616AA001F21B4 /* Carousel */,
@@ -553,6 +593,8 @@
 		BA8B465C214DFD9700D9EC42 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BAA5001B22AA52A00076EC4F /* SlideView */,
+				BA8C5F3222A2BD61009A06A9 /* StartViewController */,
 				BA271AD02270A20D00944168 /* UIActivityViewController */,
 				BA1E8FB82263679E0053691C /* BRPickerView */,
 				BA1E8FB72263678F0053691C /* ImageVideoViewViewController */,
@@ -637,6 +679,24 @@
 			path = FoldingTableView;
 			sourceTree = "<group>";
 		};
+		BA8C5F2E22A2BC92009A06A9 /* RatingControl */ = {
+			isa = PBXGroup;
+			children = (
+				BA8C5F2F22A2BCC9009A06A9 /* NMRatingControl.h */,
+				BA8C5F3022A2BCC9009A06A9 /* NMRatingControl.m */,
+			);
+			path = RatingControl;
+			sourceTree = "<group>";
+		};
+		BA8C5F3222A2BD61009A06A9 /* StartViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BA8C5F3322A2BD82009A06A9 /* StarViewController.h */,
+				BA8C5F3422A2BD82009A06A9 /* StarViewController.m */,
+			);
+			path = StartViewController;
+			sourceTree = "<group>";
+		};
 		BAA393A81E51859700B1F34D = {
 			isa = PBXGroup;
 			children = (
@@ -711,13 +771,61 @@
 			path = ShowTestDomeUITests;
 			sourceTree = "<group>";
 		};
-		BAA393EA1E5186F500B1F34D /* UIView (Extension) */ = {
+		BAA5001B22AA52A00076EC4F /* SlideView */ = {
 			isa = PBXGroup;
 			children = (
-				BAA393EB1E5186F500B1F34D /* UIView+Extension.h */,
-				BAA393EC1E5186F500B1F34D /* UIView+Extension.m */,
+				BAA5001C22AA77630076EC4F /* SlideViewViewController.h */,
+				BAA5001D22AA77630076EC4F /* SlideViewViewController.m */,
+			);
+			path = SlideView;
+			sourceTree = "<group>";
+		};
+		BAA5002222AB61210076EC4F /* XZCScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				BAA5002722AB61210076EC4F /* XZCScrollerButton.h */,
+				BAA5002522AB61210076EC4F /* XZCScrollerButton.m */,
+				BAA5002322AB61210076EC4F /* NemoScrollerView.h */,
+				BAA5002622AB61210076EC4F /* NemoScrollerView.m */,
+				BAA5002422AB61210076EC4F /* XZCScrollView.h */,
+				BAA5002822AB61210076EC4F /* XZCScrollView.m */,
+			);
+			path = XZCScrollView;
+			sourceTree = "<group>";
+		};
+		BAA5003922AB63590076EC4F /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		BAA5003A22AB63950076EC4F /* UIView (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				BAA5003B22AB63950076EC4F /* UIView+Size.h */,
+				BAA5003C22AB63950076EC4F /* UIView+Extension.h */,
+				BAA5003D22AB63950076EC4F /* UIView+Corners.h */,
+				BAA5003E22AB63950076EC4F /* UIView+Animation.m */,
+				BAA5003F22AB63950076EC4F /* UIView+Size.m */,
+				BAA5004022AB63950076EC4F /* UIView+Extension.m */,
+				BAA5004122AB63950076EC4F /* UIView+Animation.h */,
+				BAA5004222AB63950076EC4F /* UIView+Corners.m */,
 			);
 			path = "UIView (Extension)";
+			sourceTree = "<group>";
+		};
+		BAA5004722AB6B300076EC4F /* NSString(Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				BAA5004922AB6B300076EC4F /* NSString+Celestia.m */,
+				BAA5004A22AB6B300076EC4F /* NSString+regex.h */,
+				BAA5004B22AB6B300076EC4F /* NSString+Size.h */,
+				BAA5004D22AB6B300076EC4F /* NSString+regex.m */,
+				BAA5004E22AB6B300076EC4F /* NSString+Celestia.h */,
+				BAA5004F22AB6B300076EC4F /* NSString+Size.m */,
+			);
+			path = "NSString(Extension)";
 			sourceTree = "<group>";
 		};
 		F5FCE3D3F41539AB93C9A9E8 /* Pods */ = {
@@ -957,7 +1065,8 @@
 			files = (
 				BA7EFC44214A8C50008C154D /* CaptionView.m in Sources */,
 				BA620092224615AF001F21B4 /* ViewControllerConfigure.m in Sources */,
-				BAA393ED1E5186F500B1F34D /* UIView+Extension.m in Sources */,
+				BAA5001E22AA77630076EC4F /* SlideViewViewController.m in Sources */,
+				BAA5002B22AB61210076EC4F /* XZCScrollView.m in Sources */,
 				BA7CE04C1E557C80002226D5 /* JSObject.m in Sources */,
 				BA7EFC48214A8C9E008C154D /* ASCountDownView.m in Sources */,
 				BA834A561E5294F70057DB88 /* WebViewController.m in Sources */,
@@ -967,8 +1076,10 @@
 				BA38374E2253AB4C00704BB6 /* TMeButton.m in Sources */,
 				BA8B4683214E364B00D9EC42 /* FoldingSectionHeader.m in Sources */,
 				BA6200842245E720001F21B4 /* ShowGIFViewController.m in Sources */,
+				BAA5002922AB61210076EC4F /* XZCScrollerButton.m in Sources */,
 				BA82C3C41E5D967B003B83FF /* ChatImageView.m in Sources */,
 				BA7EFC4B214A8CDA008C154D /* ASViewController.m in Sources */,
+				BAA5004622AB63960076EC4F /* UIView+Corners.m in Sources */,
 				BA8B4671214DFF9F00D9EC42 /* UIView+YHCategory.m in Sources */,
 				BA6A5E841E6817A700986F22 /* TestModel.m in Sources */,
 				BA834A591E5295080057DB88 /* TestViewController.m in Sources */,
@@ -977,23 +1088,31 @@
 				BA4C740D226094AE00D49AF3 /* CustomVideoPlayerControl.m in Sources */,
 				BA8B466D214DFF9F00D9EC42 /* YHExcelView.m in Sources */,
 				BA496359224E59760098D85F /* LeaksViewController.m in Sources */,
+				BAA5005222AB6B300076EC4F /* NSString+regex.m in Sources */,
 				BAA393BC1E51859800B1F34D /* ViewController.m in Sources */,
+				BA8C5F3122A2BCC9009A06A9 /* NMRatingControl.m in Sources */,
 				BA4C74012260937A00D49AF3 /* DownloadManager.m in Sources */,
 				BA496361224E5CB90098D85F /* NMTextField.m in Sources */,
+				BA8C5F3522A2BD82009A06A9 /* StarViewController.m in Sources */,
+				BAA5002A22AB61210076EC4F /* NemoScrollerView.m in Sources */,
 				BAA393B91E51859800B1F34D /* AppDelegate.m in Sources */,
+				BAA5004422AB63960076EC4F /* UIView+Size.m in Sources */,
 				BA8B466F214DFF9F00D9EC42 /* YHExcelTitleView.m in Sources */,
 				BA620096224616D5001F21B4 /* Carousel.m in Sources */,
 				BA4C74072260943C00D49AF3 /* NSString+FileHandlePath.m in Sources */,
 				BA8B4685214E364B00D9EC42 /* FoldingModel.m in Sources */,
 				BA8B4670214DFF9F00D9EC42 /* YHExcelViewColumn.m in Sources */,
 				BA271AD32270A23400944168 /* ActivityViewController.m in Sources */,
+				BAA5004522AB63960076EC4F /* UIView+Extension.m in Sources */,
 				BA6200AA2246355A001F21B4 /* VideoModel.m in Sources */,
 				BA7CE0481E557B78002226D5 /* UIWebViewController.m in Sources */,
+				BAA5004322AB63960076EC4F /* UIView+Animation.m in Sources */,
 				BA6200992246170B001F21B4 /* VideoView.m in Sources */,
 				BAA393B61E51859800B1F34D /* main.m in Sources */,
 				BA62009C2246172D001F21B4 /* VideoMaskView.m in Sources */,
 				BA1E8FBB226367B70053691C /* BRPickerViewViewController.m in Sources */,
 				BA8B4674214DFFBC00D9EC42 /* ExcelViewController.m in Sources */,
+				BAA5005322AB6B300076EC4F /* NSString+Size.m in Sources */,
 				BAA393E91E5185B000B1F34D /* ShowLable.m in Sources */,
 				BA7EFC40214A8C3C008C154D /* CaptionViewController.m in Sources */,
 				BA62009F22462CBE001F21B4 /* VideoListViewController.m in Sources */,
@@ -1001,6 +1120,7 @@
 				BA6200A322462CE1001F21B4 /* VideoListCell.m in Sources */,
 				BA6200AE22464553001F21B4 /* VideoPlayView.m in Sources */,
 				BA8B466E214DFF9F00D9EC42 /* YHExcelViewIndexPath.m in Sources */,
+				BAA5005022AB6B300076EC4F /* NSString+Celestia.m in Sources */,
 				BA8B4684214E364B00D9EC42 /* FoldingTableView.m in Sources */,
 				BA4C740A2260949100D49AF3 /* VideoPresenter.m in Sources */,
 			);
@@ -1159,6 +1279,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mjwon.ShowTestDome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -1174,6 +1295,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mjwon.ShowTestDome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
