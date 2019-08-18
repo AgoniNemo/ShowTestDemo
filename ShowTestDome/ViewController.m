@@ -19,7 +19,7 @@
     [super viewDidLoad];
     [self.view addSubview:self.tableView];
     
-    UIViewController *vc = [[NSClassFromString(@"SlideViewViewController") alloc] init];
+    UIViewController *vc = [[NSClassFromString(@"WeChatCircleViewController") alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -49,7 +49,8 @@
 }
 -(NSArray *)dataSource
 {
-  return @[@{@"title":@"SlideView",@"vc":@"SlideViewViewController"},
+  return @[@{@"title":@"发微信朋友圈图片移动",@"vc":@"WeChatCircleViewController"},
+           @{@"title":@"SlideView",@"vc":@"SlideViewViewController"},
            @{@"title":@"WKWebView演示iOS传值到Web",@"vc":@"WebViewController"},
            @{@"title":@"聊天气泡",@"vc":@"TestViewController"},
            @{@"title":@"加载打包web",@"vc":@"UIWebViewController"},

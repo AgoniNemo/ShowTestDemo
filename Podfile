@@ -15,6 +15,8 @@ def base_pods
     pod 'Aspects'
     pod 'MLeaksFinder', :configuration => 'Debug'
     pod 'BRPickerView'
+    pod 'YYCategories'
+
 end
 
 target 'ShowTestDome' do

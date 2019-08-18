@@ -16,6 +16,7 @@
 #import <MJExtension.h>
 #import <MJRefresh.h>
 #import <SDWebImage/UIImageView+WebCache.h>
+#import <YYCategories.h>
 
 #ifndef __OPTIMIZE__ // 处于开发阶段
 #define NSLog(...) NSLog(__VA_ARGS__)

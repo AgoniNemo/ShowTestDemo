@@ -13,6 +13,10 @@
 		BA1E8FBB226367B70053691C /* BRPickerViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1E8FBA226367B70053691C /* BRPickerViewViewController.m */; };
 		BA271AD32270A23400944168 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA271AD22270A23400944168 /* ActivityViewController.m */; };
 		BA38374E2253AB4C00704BB6 /* TMeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BA38374D2253AB4C00704BB6 /* TMeButton.m */; };
+		BA43568E230910130022B697 /* WeChatCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA43568D230910130022B697 /* WeChatCircleViewController.m */; };
+		BA435697230949A20022B697 /* NMDragListView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA435696230949A20022B697 /* NMDragListView.m */; };
+		BA43569A23094A360022B697 /* NMDragListViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BA43569923094A360022B697 /* NMDragListViewConfiguration.m */; };
+		BA43569D23094B890022B697 /* ActivitySceneItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BA43569C23094B890022B697 /* ActivitySceneItem.m */; };
 		BA47DCC41E89FE9400DFD7F5 /* IMG_0069.GIF in Resources */ = {isa = PBXBuildFile; fileRef = BA47DCBF1E89FE9400DFD7F5 /* IMG_0069.GIF */; };
 		BA47DCC51E89FE9400DFD7F5 /* IMG_0076.JPG in Resources */ = {isa = PBXBuildFile; fileRef = BA47DCC01E89FE9400DFD7F5 /* IMG_0076.JPG */; };
 		BA47DCC61E89FE9400DFD7F5 /* IMG_0148.GIF in Resources */ = {isa = PBXBuildFile; fileRef = BA47DCC11E89FE9400DFD7F5 /* IMG_0148.GIF */; };
@@ -113,6 +117,14 @@
 		BA271AD22270A23400944168 /* ActivityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
 		BA38374C2253AB4C00704BB6 /* TMeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMeButton.h; sourceTree = "<group>"; };
 		BA38374D2253AB4C00704BB6 /* TMeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMeButton.m; sourceTree = "<group>"; };
+		BA43568C230910130022B697 /* WeChatCircleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeChatCircleViewController.h; sourceTree = "<group>"; };
+		BA43568D230910130022B697 /* WeChatCircleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeChatCircleViewController.m; sourceTree = "<group>"; };
+		BA435695230949A20022B697 /* NMDragListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMDragListView.h; sourceTree = "<group>"; };
+		BA435696230949A20022B697 /* NMDragListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMDragListView.m; sourceTree = "<group>"; };
+		BA43569823094A360022B697 /* NMDragListViewConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMDragListViewConfiguration.h; sourceTree = "<group>"; };
+		BA43569923094A360022B697 /* NMDragListViewConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMDragListViewConfiguration.m; sourceTree = "<group>"; };
+		BA43569B23094B890022B697 /* ActivitySceneItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivitySceneItem.h; sourceTree = "<group>"; };
+		BA43569C23094B890022B697 /* ActivitySceneItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivitySceneItem.m; sourceTree = "<group>"; };
 		BA47DCBF1E89FE9400DFD7F5 /* IMG_0069.GIF */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = IMG_0069.GIF; sourceTree = "<group>"; };
 		BA47DCC01E89FE9400DFD7F5 /* IMG_0076.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0076.JPG; sourceTree = "<group>"; };
 		BA47DCC11E89FE9400DFD7F5 /* IMG_0148.GIF */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = IMG_0148.GIF; sourceTree = "<group>"; };
@@ -402,6 +414,21 @@
 			path = ThemeButton;
 			sourceTree = "<group>";
 		};
+		BA43568B23090FCB0022B697 /* WeChaTCircle */ = {
+			isa = PBXGroup;
+			children = (
+				BA43568C230910130022B697 /* WeChatCircleViewController.h */,
+				BA43568D230910130022B697 /* WeChatCircleViewController.m */,
+				BA435695230949A20022B697 /* NMDragListView.h */,
+				BA435696230949A20022B697 /* NMDragListView.m */,
+				BA43569823094A360022B697 /* NMDragListViewConfiguration.h */,
+				BA43569923094A360022B697 /* NMDragListViewConfiguration.m */,
+				BA43569B23094B890022B697 /* ActivitySceneItem.h */,
+				BA43569C23094B890022B697 /* ActivitySceneItem.m */,
+			);
+			path = WeChaTCircle;
+			sourceTree = "<group>";
+		};
 		BA47DCBE1E89FE9400DFD7F5 /* chatImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -593,6 +620,7 @@
 		BA8B465C214DFD9700D9EC42 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BA43568B23090FCB0022B697 /* WeChaTCircle */,
 				BAA5001B22AA52A00076EC4F /* SlideView */,
 				BA8C5F3222A2BD61009A06A9 /* StartViewController */,
 				BA271AD02270A20D00944168 /* UIActivityViewController */,
@@ -1006,7 +1034,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ShowTestDome/Pods-ShowTestDome-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ShowTestDome/Pods-ShowTestDome-resources.sh",
 				"${PODS_ROOT}/BRPickerView/BRPickerView/AddressPickerView/BRPickerView.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
@@ -1017,7 +1045,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShowTestDome/Pods-ShowTestDome-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShowTestDome/Pods-ShowTestDome-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A09E21D93C758BF978DC1AE4 /* [CP] Check Pods Manifest.lock */ = {
@@ -1076,6 +1104,7 @@
 				BA38374E2253AB4C00704BB6 /* TMeButton.m in Sources */,
 				BA8B4683214E364B00D9EC42 /* FoldingSectionHeader.m in Sources */,
 				BA6200842245E720001F21B4 /* ShowGIFViewController.m in Sources */,
+				BA435697230949A20022B697 /* NMDragListView.m in Sources */,
 				BAA5002922AB61210076EC4F /* XZCScrollerButton.m in Sources */,
 				BA82C3C41E5D967B003B83FF /* ChatImageView.m in Sources */,
 				BA7EFC4B214A8CDA008C154D /* ASViewController.m in Sources */,
@@ -1090,10 +1119,12 @@
 				BA496359224E59760098D85F /* LeaksViewController.m in Sources */,
 				BAA5005222AB6B300076EC4F /* NSString+regex.m in Sources */,
 				BAA393BC1E51859800B1F34D /* ViewController.m in Sources */,
+				BA43569D23094B890022B697 /* ActivitySceneItem.m in Sources */,
 				BA8C5F3122A2BCC9009A06A9 /* NMRatingControl.m in Sources */,
 				BA4C74012260937A00D49AF3 /* DownloadManager.m in Sources */,
 				BA496361224E5CB90098D85F /* NMTextField.m in Sources */,
 				BA8C5F3522A2BD82009A06A9 /* StarViewController.m in Sources */,
+				BA43569A23094A360022B697 /* NMDragListViewConfiguration.m in Sources */,
 				BAA5002A22AB61210076EC4F /* NemoScrollerView.m in Sources */,
 				BAA393B91E51859800B1F34D /* AppDelegate.m in Sources */,
 				BAA5004422AB63960076EC4F /* UIView+Size.m in Sources */,
@@ -1106,6 +1137,7 @@
 				BAA5004522AB63960076EC4F /* UIView+Extension.m in Sources */,
 				BA6200AA2246355A001F21B4 /* VideoModel.m in Sources */,
 				BA7CE0481E557B78002226D5 /* UIWebViewController.m in Sources */,
+				BA43568E230910130022B697 /* WeChatCircleViewController.m in Sources */,
 				BAA5004322AB63960076EC4F /* UIView+Animation.m in Sources */,
 				BA6200992246170B001F21B4 /* VideoView.m in Sources */,
 				BAA393B61E51859800B1F34D /* main.m in Sources */,
