@@ -1,8 +1,8 @@
 //
-//  ActivitySceneItem.h
+//  ActivityHeaderView.h
 //  ShowTestDome
 //
-//  Created by Nemo on 2019/8/18.
+//  Created by Nemo on 2019/8/23.
 //  Copyright © 2019 Nemo. All rights reserved.
 //
 
@@ -10,10 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ActivitySceneItem : UIImageView
+@interface ActivityHeaderView : UIView
 
-@property (nonatomic, assign) BOOL isAdd;
-
+@property (nonatomic, strong) NSArray *datas;
 
 @end
 

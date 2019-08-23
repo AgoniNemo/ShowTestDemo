@@ -19,7 +19,7 @@
     [super viewDidLoad];
     [self.view addSubview:self.tableView];
     
-    UIViewController *vc = [[NSClassFromString(@"WeChatCircleViewController") alloc] init];
+    UIViewController *vc = [[NSClassFromString(@"ActivityHeaderViewController") alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

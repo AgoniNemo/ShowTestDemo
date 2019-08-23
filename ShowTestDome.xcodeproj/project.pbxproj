@@ -10,6 +10,8 @@
 		77502C9ADA7E7B76F17D4880 /* libPods-ShowTestDomeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF98B72F12E72D0AFDAD88FF /* libPods-ShowTestDomeTests.a */; };
 		7B6F13E5E89134F5368BFCC4 /* libPods-ShowTestDomeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C496B0DF6FB40F0DCD46BB /* libPods-ShowTestDomeUITests.a */; };
 		AA89F30ECC94914BCC19FE0E /* libPods-ShowTestDome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBDF11F9241304BE9C91564 /* libPods-ShowTestDome.a */; };
+		BA1BFFAC231036BC003A2F71 /* ActivityHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1BFFAB231036BC003A2F71 /* ActivityHeaderView.m */; };
+		BA1BFFAF2310374E003A2F71 /* ActivityHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1BFFAE2310374E003A2F71 /* ActivityHeaderViewController.m */; };
 		BA1E8FBB226367B70053691C /* BRPickerViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1E8FBA226367B70053691C /* BRPickerViewViewController.m */; };
 		BA271AD32270A23400944168 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA271AD22270A23400944168 /* ActivityViewController.m */; };
 		BA38374E2253AB4C00704BB6 /* TMeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BA38374D2253AB4C00704BB6 /* TMeButton.m */; };
@@ -111,6 +113,10 @@
 		2ACA4DAAB5EFAA9EFA849127 /* Pods-ShowTestDomeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowTestDomeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShowTestDomeUITests/Pods-ShowTestDomeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		34C496B0DF6FB40F0DCD46BB /* libPods-ShowTestDomeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShowTestDomeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63088B45333EBC25584B4E3 /* Pods-ShowTestDomeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowTestDomeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShowTestDomeTests/Pods-ShowTestDomeTests.release.xcconfig"; sourceTree = "<group>"; };
+		BA1BFFAA231036BC003A2F71 /* ActivityHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivityHeaderView.h; sourceTree = "<group>"; };
+		BA1BFFAB231036BC003A2F71 /* ActivityHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivityHeaderView.m; sourceTree = "<group>"; };
+		BA1BFFAD2310374E003A2F71 /* ActivityHeaderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivityHeaderViewController.h; sourceTree = "<group>"; };
+		BA1BFFAE2310374E003A2F71 /* ActivityHeaderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivityHeaderViewController.m; sourceTree = "<group>"; };
 		BA1E8FB9226367B70053691C /* BRPickerViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRPickerViewViewController.h; sourceTree = "<group>"; };
 		BA1E8FBA226367B70053691C /* BRPickerViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRPickerViewViewController.m; sourceTree = "<group>"; };
 		BA271AD12270A23400944168 /* ActivityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
@@ -304,6 +310,17 @@
 				34C496B0DF6FB40F0DCD46BB /* libPods-ShowTestDomeUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA1BFFA9231034BD003A2F71 /* ActivityHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				BA1BFFAA231036BC003A2F71 /* ActivityHeaderView.h */,
+				BA1BFFAB231036BC003A2F71 /* ActivityHeaderView.m */,
+				BA1BFFAD2310374E003A2F71 /* ActivityHeaderViewController.h */,
+				BA1BFFAE2310374E003A2F71 /* ActivityHeaderViewController.m */,
+			);
+			path = ActivityHeaderView;
 			sourceTree = "<group>";
 		};
 		BA1E8FAF2263672F0053691C /* ShowGIFViewController */ = {
@@ -620,6 +637,7 @@
 		BA8B465C214DFD9700D9EC42 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BA1BFFA9231034BD003A2F71 /* ActivityHeaderView */,
 				BA43568B23090FCB0022B697 /* WeChaTCircle */,
 				BAA5001B22AA52A00076EC4F /* SlideView */,
 				BA8C5F3222A2BD61009A06A9 /* StartViewController */,
@@ -1128,6 +1146,7 @@
 				BAA5002A22AB61210076EC4F /* NemoScrollerView.m in Sources */,
 				BAA393B91E51859800B1F34D /* AppDelegate.m in Sources */,
 				BAA5004422AB63960076EC4F /* UIView+Size.m in Sources */,
+				BA1BFFAC231036BC003A2F71 /* ActivityHeaderView.m in Sources */,
 				BA8B466F214DFF9F00D9EC42 /* YHExcelTitleView.m in Sources */,
 				BA620096224616D5001F21B4 /* Carousel.m in Sources */,
 				BA4C74072260943C00D49AF3 /* NSString+FileHandlePath.m in Sources */,
@@ -1150,6 +1169,7 @@
 				BA62009F22462CBE001F21B4 /* VideoListViewController.m in Sources */,
 				BA62008D224614C5001F21B4 /* ImageVideoViewViewController.m in Sources */,
 				BA6200A322462CE1001F21B4 /* VideoListCell.m in Sources */,
+				BA1BFFAF2310374E003A2F71 /* ActivityHeaderViewController.m in Sources */,
 				BA6200AE22464553001F21B4 /* VideoPlayView.m in Sources */,
 				BA8B466E214DFF9F00D9EC42 /* YHExcelViewIndexPath.m in Sources */,
 				BAA5005022AB6B300076EC4F /* NSString+Celestia.m in Sources */,

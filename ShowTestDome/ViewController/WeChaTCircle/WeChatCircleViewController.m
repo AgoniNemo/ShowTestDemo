@@ -11,8 +11,6 @@
 
 @interface WeChatCircleViewController ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 @property (nonatomic, strong) NMDragListView *dragItemList;
-@property (nonatomic, strong) UIView *headerView;
-@property (nonatomic, assign) CGFloat lastTextViewHeight;
 @end
 
 @implementation WeChatCircleViewController
