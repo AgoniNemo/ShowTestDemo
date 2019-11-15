@@ -15,6 +15,10 @@
 		BA1E8FBB226367B70053691C /* BRPickerViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1E8FBA226367B70053691C /* BRPickerViewViewController.m */; };
 		BA271AD32270A23400944168 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA271AD22270A23400944168 /* ActivityViewController.m */; };
 		BA38374E2253AB4C00704BB6 /* TMeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BA38374D2253AB4C00704BB6 /* TMeButton.m */; };
+		BA3BDE39237EDEEE0026E4E4 /* UIViewController+Hidden.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3BDE38237EDEEE0026E4E4 /* UIViewController+Hidden.m */; };
+		BA3BDE3D237EDF2F0026E4E4 /* HiddenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3BDE3C237EDF2F0026E4E4 /* HiddenViewController.m */; };
+		BA3BDE41237EDFE40026E4E4 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3BDE3F237EDFE40026E4E4 /* CollectionViewCell.m */; };
+		BA3BDE42237EDFE40026E4E4 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3BDE40237EDFE40026E4E4 /* CollectionViewCell.xib */; };
 		BA43568E230910130022B697 /* WeChatCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA43568D230910130022B697 /* WeChatCircleViewController.m */; };
 		BA435697230949A20022B697 /* NMDragListView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA435696230949A20022B697 /* NMDragListView.m */; };
 		BA43569A23094A360022B697 /* NMDragListViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BA43569923094A360022B697 /* NMDragListViewConfiguration.m */; };
@@ -123,6 +127,13 @@
 		BA271AD22270A23400944168 /* ActivityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
 		BA38374C2253AB4C00704BB6 /* TMeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMeButton.h; sourceTree = "<group>"; };
 		BA38374D2253AB4C00704BB6 /* TMeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMeButton.m; sourceTree = "<group>"; };
+		BA3BDE37237EDEEE0026E4E4 /* UIViewController+Hidden.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Hidden.h"; sourceTree = "<group>"; };
+		BA3BDE38237EDEEE0026E4E4 /* UIViewController+Hidden.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Hidden.m"; sourceTree = "<group>"; };
+		BA3BDE3B237EDF2F0026E4E4 /* HiddenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HiddenViewController.h; sourceTree = "<group>"; };
+		BA3BDE3C237EDF2F0026E4E4 /* HiddenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HiddenViewController.m; sourceTree = "<group>"; };
+		BA3BDE3E237EDFE40026E4E4 /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		BA3BDE3F237EDFE40026E4E4 /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		BA3BDE40237EDFE40026E4E4 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		BA43568C230910130022B697 /* WeChatCircleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeChatCircleViewController.h; sourceTree = "<group>"; };
 		BA43568D230910130022B697 /* WeChatCircleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeChatCircleViewController.m; sourceTree = "<group>"; };
 		BA435695230949A20022B697 /* NMDragListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMDragListView.h; sourceTree = "<group>"; };
@@ -422,6 +433,27 @@
 			path = UIActivityViewController;
 			sourceTree = "<group>";
 		};
+		BA3BDE36237EDED70026E4E4 /* UIViewController+Hidden */ = {
+			isa = PBXGroup;
+			children = (
+				BA3BDE37237EDEEE0026E4E4 /* UIViewController+Hidden.h */,
+				BA3BDE38237EDEEE0026E4E4 /* UIViewController+Hidden.m */,
+			);
+			path = "UIViewController+Hidden";
+			sourceTree = "<group>";
+		};
+		BA3BDE3A237EDEFB0026E4E4 /* HiddenViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BA3BDE3B237EDF2F0026E4E4 /* HiddenViewController.h */,
+				BA3BDE3C237EDF2F0026E4E4 /* HiddenViewController.m */,
+				BA3BDE3E237EDFE40026E4E4 /* CollectionViewCell.h */,
+				BA3BDE3F237EDFE40026E4E4 /* CollectionViewCell.m */,
+				BA3BDE40237EDFE40026E4E4 /* CollectionViewCell.xib */,
+			);
+			path = HiddenViewController;
+			sourceTree = "<group>";
+		};
 		BA41C8E52250D11E005BA4CF /* ThemeButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -507,6 +539,7 @@
 		BA62008E2246158A001F21B4 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				BA3BDE36237EDED70026E4E4 /* UIViewController+Hidden */,
 				BA62008F224615A6001F21B4 /* Configure */,
 				BA47DCBE1E89FE9400DFD7F5 /* chatImage */,
 			);
@@ -637,6 +670,7 @@
 		BA8B465C214DFD9700D9EC42 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BA3BDE3A237EDEFB0026E4E4 /* HiddenViewController */,
 				BA1BFFA9231034BD003A2F71 /* ActivityHeaderView */,
 				BA43568B23090FCB0022B697 /* WeChaTCircle */,
 				BAA5001B22AA52A00076EC4F /* SlideView */,
@@ -999,6 +1033,7 @@
 			files = (
 				BAA393C41E51859900B1F34D /* LaunchScreen.storyboard in Resources */,
 				BA47DCC71E89FE9400DFD7F5 /* IMG_1014.PNG in Resources */,
+				BA3BDE42237EDFE40026E4E4 /* CollectionViewCell.xib in Resources */,
 				BA47DCC61E89FE9400DFD7F5 /* IMG_0148.GIF in Resources */,
 				BA47DCC51E89FE9400DFD7F5 /* IMG_0076.JPG in Resources */,
 				BAA393C11E51859900B1F34D /* Assets.xcassets in Resources */,
@@ -1121,6 +1156,7 @@
 				BA4C73FE2260928A00D49AF3 /* VideoPlayer.m in Sources */,
 				BA38374E2253AB4C00704BB6 /* TMeButton.m in Sources */,
 				BA8B4683214E364B00D9EC42 /* FoldingSectionHeader.m in Sources */,
+				BA3BDE3D237EDF2F0026E4E4 /* HiddenViewController.m in Sources */,
 				BA6200842245E720001F21B4 /* ShowGIFViewController.m in Sources */,
 				BA435697230949A20022B697 /* NMDragListView.m in Sources */,
 				BAA5002922AB61210076EC4F /* XZCScrollerButton.m in Sources */,
@@ -1165,9 +1201,11 @@
 				BA8B4674214DFFBC00D9EC42 /* ExcelViewController.m in Sources */,
 				BAA5005322AB6B300076EC4F /* NSString+Size.m in Sources */,
 				BAA393E91E5185B000B1F34D /* ShowLable.m in Sources */,
+				BA3BDE41237EDFE40026E4E4 /* CollectionViewCell.m in Sources */,
 				BA7EFC40214A8C3C008C154D /* CaptionViewController.m in Sources */,
 				BA62009F22462CBE001F21B4 /* VideoListViewController.m in Sources */,
 				BA62008D224614C5001F21B4 /* ImageVideoViewViewController.m in Sources */,
+				BA3BDE39237EDEEE0026E4E4 /* UIViewController+Hidden.m in Sources */,
 				BA6200A322462CE1001F21B4 /* VideoListCell.m in Sources */,
 				BA1BFFAF2310374E003A2F71 /* ActivityHeaderViewController.m in Sources */,
 				BA6200AE22464553001F21B4 /* VideoPlayView.m in Sources */,
@@ -1269,7 +1307,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1311,7 +1349,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1327,7 +1365,7 @@
 				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/ShowTestDome/Define/PrefixHeader.pch";
 				INFOPLIST_FILE = ShowTestDome/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mjwon.ShowTestDome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1343,7 +1381,7 @@
 				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/ShowTestDome/Define/PrefixHeader.pch";
 				INFOPLIST_FILE = ShowTestDome/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mjwon.ShowTestDome;
 				PRODUCT_NAME = "$(TARGET_NAME)";

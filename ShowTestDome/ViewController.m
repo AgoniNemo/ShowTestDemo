@@ -19,8 +19,8 @@
     [super viewDidLoad];
     [self.view addSubview:self.tableView];
     
-    UIViewController *vc = [[NSClassFromString(@"ActivityHeaderViewController") alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+//    UIViewController *vc = [[NSClassFromString(@"ActivityHeaderViewController") alloc] init];
+//    [self.navigationController pushViewController:vc animated:YES];
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -49,7 +49,9 @@
 }
 -(NSArray *)dataSource
 {
-  return @[@{@"title":@"发微信朋友圈图片移动",@"vc":@"WeChatCircleViewController"},
+  return @[
+           @{@"title":@"导航显示与隐藏",@"vc":@"HiddenViewController"},
+           @{@"title":@"发微信朋友圈图片移动",@"vc":@"WeChatCircleViewController"},
            @{@"title":@"SlideView",@"vc":@"SlideViewViewController"},
            @{@"title":@"WKWebView演示iOS传值到Web",@"vc":@"WebViewController"},
            @{@"title":@"聊天气泡",@"vc":@"TestViewController"},
