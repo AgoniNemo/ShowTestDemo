@@ -30,7 +30,7 @@
     [config.userContentController addScriptMessageHandler:[[WeakScriptMessageDelegate alloc] initWithDelegate:self] name:@"iOS"];
     [config.userContentController addUserScript:wkUScript];
     
-    _webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT) configuration:config];
+    _webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, nScreenWidth(), nScreenHeight()) configuration:config];
     _webView.UIDelegate = self;
     _webView.navigationDelegate = self;
     NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html" inDirectory:@"web_bi_app"];

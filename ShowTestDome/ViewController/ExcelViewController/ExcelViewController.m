@@ -40,26 +40,26 @@
 
 -(void)createExcel{
     CGFloat titleY = 64;
-    self.titleView = [[YHExcelTitleView alloc] initWithFrame:CGRectMake(0, titleY, SCREENWIDTH, 30)];
-    self.titleView.contentSize = CGSizeMake(SCREENWIDTH, 0);
-    self.titleView.backgroundColor = HOMECOLOR;
+    self.titleView = [[YHExcelTitleView alloc] initWithFrame:CGRectMake(0, titleY, nScreenWidth(), 30)];
+    self.titleView.contentSize = CGSizeMake(nScreenWidth(), 0);
+    self.titleView.backgroundColor = WARNINGCOLOR();
     self.titleView.adjustsFontSizeToFitWidth = YES;
     [self.view addSubview:self.titleView];
     
     CGFloat y = CGRectGetMaxY(self.titleView.frame);
     NSLog(@"%f",y);
-    self.excelView = [[YHExcelView alloc] initWithFrame:CGRectMake(0, y, SCREENWIDTH, SCREENHEIGHT-y-5)];
+    self.excelView = [[YHExcelView alloc] initWithFrame:CGRectMake(0, y, nScreenWidth(), nScreenHeight()-y-5)];
     self.excelView.showBorder = YES;
     self.excelView.borderWidth = 1;
     self.excelView.borderColor = [UIColor colorWithRed:187/255.0f green:187/255.0f blue:187/255.0f alpha:1];
     [self.view addSubview:self.excelView];
-    CGFloat width = SCREENWIDTH-20;
+    CGFloat width = nScreenWidth()-20;
     //品质审批任务-IQCMRB评审-20161104-681
     self.titleArray = @[@"审批环节",@"用户",@"审批意见",@"审批状态",@"审批时间"];
     
     self.excelView.tableViewFrame = CGRectMake(10, 10, width, CGRectGetMaxY(self.excelView.frame)-64-y-7);//设置可横向滚动
     NSLog(@"%f",CGRectGetMaxY(self.excelView.frame)-64-y-7);
-    self.titleView.contentSize = CGSizeMake(SCREENWIDTH, 0);
+    self.titleView.contentSize = CGSizeMake(nScreenWidth(), 0);
     
     
     self.titleView.dataSource = self;
@@ -87,7 +87,7 @@
 }
 - (CGFloat)excelTitleView:(YHExcelTitleView *)titleView widthForItemAtIndex:(NSInteger)index
 {
-    return SCREENWIDTH;
+    return nScreenWidth();
 }
 
 #pragma mark - YHExcelViewDataSource
@@ -96,7 +96,7 @@
 }
 
 - (CGFloat)excelView:(YHExcelView *)excelView widthForColumnAtIndex:(YHExcelViewIndexPath *)indexPath {
-    return (SCREENWIDTH-20)/5;
+    return (nScreenWidth()-20)/5;
     
 }
 

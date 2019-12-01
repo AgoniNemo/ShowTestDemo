@@ -21,7 +21,7 @@
         CGFloat width = 60;
         CGFloat height = 20;
         CGFloat y = (75-height)/2;
-        CGFloat x = (SCREENWIDTH-width)/2;
+        CGFloat x = (nScreenWidth()-width)/2;
         self.test = [[UILabel alloc] initWithFrame:CGRectMake(x, y, width, height)];
         
         

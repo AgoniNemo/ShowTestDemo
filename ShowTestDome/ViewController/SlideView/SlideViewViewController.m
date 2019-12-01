@@ -8,6 +8,7 @@
 
 #import "SlideViewViewController.h"
 #import "NemoScrollerView.h"
+#import "NestingViewController.h"
 
 @interface SlideViewViewController ()
 
@@ -28,29 +29,31 @@
 }
 - (void)createScroll {
     
-    NSArray <NSString *>*titles = @[@"技师",@"商家"];
-    NemoScrollerView *scroll = [[NemoScrollerView alloc] initWithFrame:CGRectMake(0, 88, SCREENWIDTH, SCREENHEIGHT)];
+    NSArray <NSString *>*titles = @[@"想做",@"发现",@"大大大"];
+    NemoScrollerView *scroll = [[NemoScrollerView alloc] initWithFrame:CGRectMake(0, 88, nScreenWidth(), nScreenHeight())];
     scroll.titles = titles;
     scroll.lineColor = RGBACOLOR(230, 47, 92, 1);
     scroll.textColor = RGBACOLOR(230, 47, 92, 1);
     scroll.topViewColor = RGBACOLOR(249, 249, 249, 1);
     
-    UIViewController *modelVc = [[UIViewController alloc] init];
-    modelVc.view.backgroundColor = [UIColor brownColor];
-    UIViewController *storeVc = [[UIViewController alloc] init];
-    storeVc.view.backgroundColor = [UIColor purpleColor];
+    UIViewController *vc1 = [[UIViewController alloc] init];
+    vc1.view.backgroundColor = [UIColor brownColor];
+    UIViewController *vc2 = [[UIViewController alloc] init];
+    vc2.view.backgroundColor = [UIColor purpleColor];
+    UIViewController *vc3 = [[UIViewController alloc] init];
+    vc3.view.backgroundColor = [UIColor orangeColor];
     
     scroll.srollerAction = ^(NSInteger tag) {
-        NSLog(@"%ld",tag);
+//        NSLog(@"%ld",tag);
     };
     scroll.viewController = self;
-    scroll.viewControllers = @[modelVc,storeVc];
+    scroll.viewControllers = @[vc1,vc2,vc3];
     [self.view addSubview:scroll];
     
 
     
     UIButton *videoBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    videoBtn.frame = CGRectMake(SCREENWIDTH-20-24, 13, 24, 24);
+    videoBtn.frame = CGRectMake(nScreenWidth()-20-24, 13, 24, 24);
     [videoBtn setImage:[UIImage imageNamed:@"m_view_video"] forState:UIControlStateNormal];
     [videoBtn setImage:[UIImage imageNamed:@"m_view_video"] forState:UIControlStateHighlighted];
     [scroll.scroller addSubview:videoBtn];

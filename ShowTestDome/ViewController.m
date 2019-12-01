@@ -19,7 +19,7 @@
     [super viewDidLoad];
     [self.view addSubview:self.tableView];
     
-//    UIViewController *vc = [[NSClassFromString(@"ActivityHeaderViewController") alloc] init];
+//    UIViewController *vc = [[NSClassFromString(@"SlideViewViewController") alloc] init];
 //    [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -72,7 +72,7 @@
 -(UITableView *)tableView
 {
     if (_tableView == nil) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0,SCREENWIDTH , SCREENHEIGHT)];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0,nScreenWidth() , nScreenHeight())];
         _tableView.delegate = self;
         _tableView.dataSource = self;
     }

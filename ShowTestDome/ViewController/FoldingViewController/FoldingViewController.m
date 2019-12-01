@@ -27,7 +27,7 @@
 }
 
 -(void)createQuest{
-    FoldingTableView *tableView = [[FoldingTableView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT)];
+    FoldingTableView *tableView = [[FoldingTableView alloc] initWithFrame:CGRectMake(0, 0, nScreenWidth(), nScreenHeight())];
     tableView.foldingDelegate = self;
     _tableView = tableView;
     [self.view addSubview:tableView];
@@ -60,7 +60,7 @@
 -(UIColor *)foldingTableView:(FoldingTableView *)tableView backgroundColorForHeaderInSection:(NSInteger)section{
     
     if (section == 0) {
-        return HOMECOLOR;
+        return WARNINGCOLOR();
     }
     return [UIColor whiteColor];
 }
@@ -73,7 +73,7 @@
 }
 -(UIColor *)clickBackgroundColor
 {
-    return HOMECOLOR;
+    return WARNINGCOLOR();
 }
 -(UIColor *)clickHeaderTitleColor
 {

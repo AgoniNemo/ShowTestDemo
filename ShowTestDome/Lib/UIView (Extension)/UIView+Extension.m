@@ -40,7 +40,7 @@
     UIBezierPath *path = [UIBezierPath bezierPath];
     [path moveToPoint:self.cLy.position];
     /// 第一个参数为结束点  第二参数为上升的b点
-    [path addQuadCurveToPoint:point controlPoint:CGPointMake(SCREENWIDTH/2, rect.origin.y-80)];
+    [path addQuadCurveToPoint:point controlPoint:CGPointMake(nScreenWidth()/2, rect.origin.y-80)];
     CAKeyframeAnimation *pathAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
     pathAnimation.path = path.CGPath;
     /// 旋转动画

@@ -18,13 +18,16 @@ typedef void (^SrollerClick)(NSInteger tag);
 @property (nonatomic,weak) UIViewController *viewController;
 @property (nonatomic,strong) NSArray *viewControllers;
 
-@property (nonatomic,assign) CGFloat lineHeight;
-
-@property (nonatomic,strong) UIColor *lineColor;
+@property (nonatomic, assign) CGFloat lineHeight;
+@property (nonatomic, assign) CGFloat lineWidth;
+@property (nonatomic, strong) UIColor *lineColor;
 
 @property (nonatomic,strong) UIColor *topViewColor;
 
 @property (nonatomic,assign) CGFloat textFont;
+
+@property (nonatomic,strong) UIFont *font;
+@property (nonatomic,strong) UIFont *heightFont;
 
 @property (nonatomic,strong) UIColor *textColor;
 

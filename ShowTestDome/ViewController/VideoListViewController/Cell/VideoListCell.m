@@ -25,7 +25,7 @@
     // Initialization code
     NSString *url = @"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4";
     UIView *view = [[UIView alloc] init];
-    view.frame = CGRectMake(16, 8, SCREENWIDTH-32, 257);
+    view.frame = CGRectMake(16, 8, nScreenWidth()-32, 257);
     view.backgroundColor = [UIColor blackColor];
     view.layer.masksToBounds = YES;
     view.layer.cornerRadius = 10;

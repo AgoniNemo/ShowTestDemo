@@ -14,6 +14,10 @@
 		BA1BFFAF2310374E003A2F71 /* ActivityHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1BFFAE2310374E003A2F71 /* ActivityHeaderViewController.m */; };
 		BA1E8FBB226367B70053691C /* BRPickerViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1E8FBA226367B70053691C /* BRPickerViewViewController.m */; };
 		BA271AD32270A23400944168 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA271AD22270A23400944168 /* ActivityViewController.m */; };
+		BA35D7072393B1A8006A23D8 /* XZCScrollerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BA35D7032393B1A8006A23D8 /* XZCScrollerButton.m */; };
+		BA35D7082393B1A8006A23D8 /* NemoScrollerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA35D7042393B1A8006A23D8 /* NemoScrollerView.m */; };
+		BA35D7092393B1A8006A23D8 /* XZCScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA35D7062393B1A8006A23D8 /* XZCScrollView.m */; };
+		BA35D70C2393B65C006A23D8 /* NestingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA35D70B2393B65C006A23D8 /* NestingViewController.m */; };
 		BA38374E2253AB4C00704BB6 /* TMeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BA38374D2253AB4C00704BB6 /* TMeButton.m */; };
 		BA3BDE39237EDEEE0026E4E4 /* UIViewController+Hidden.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3BDE38237EDEEE0026E4E4 /* UIViewController+Hidden.m */; };
 		BA3BDE3D237EDF2F0026E4E4 /* HiddenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3BDE3C237EDF2F0026E4E4 /* HiddenViewController.m */; };
@@ -83,9 +87,6 @@
 		BAA393DA1E51859900B1F34D /* ShowTestDomeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA393D91E51859900B1F34D /* ShowTestDomeUITests.m */; };
 		BAA393E91E5185B000B1F34D /* ShowLable.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA393E81E5185B000B1F34D /* ShowLable.m */; };
 		BAA5001E22AA77630076EC4F /* SlideViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA5001D22AA77630076EC4F /* SlideViewViewController.m */; };
-		BAA5002922AB61210076EC4F /* XZCScrollerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA5002522AB61210076EC4F /* XZCScrollerButton.m */; };
-		BAA5002A22AB61210076EC4F /* NemoScrollerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA5002622AB61210076EC4F /* NemoScrollerView.m */; };
-		BAA5002B22AB61210076EC4F /* XZCScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA5002822AB61210076EC4F /* XZCScrollView.m */; };
 		BAA5004322AB63960076EC4F /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA5003E22AB63950076EC4F /* UIView+Animation.m */; };
 		BAA5004422AB63960076EC4F /* UIView+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA5003F22AB63950076EC4F /* UIView+Size.m */; };
 		BAA5004522AB63960076EC4F /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA5004022AB63950076EC4F /* UIView+Extension.m */; };
@@ -125,6 +126,14 @@
 		BA1E8FBA226367B70053691C /* BRPickerViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRPickerViewViewController.m; sourceTree = "<group>"; };
 		BA271AD12270A23400944168 /* ActivityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
 		BA271AD22270A23400944168 /* ActivityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
+		BA35D7012393B1A8006A23D8 /* NemoScrollerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NemoScrollerView.h; sourceTree = "<group>"; };
+		BA35D7022393B1A8006A23D8 /* XZCScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCScrollView.h; sourceTree = "<group>"; };
+		BA35D7032393B1A8006A23D8 /* XZCScrollerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCScrollerButton.m; sourceTree = "<group>"; };
+		BA35D7042393B1A8006A23D8 /* NemoScrollerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NemoScrollerView.m; sourceTree = "<group>"; };
+		BA35D7052393B1A8006A23D8 /* XZCScrollerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCScrollerButton.h; sourceTree = "<group>"; };
+		BA35D7062393B1A8006A23D8 /* XZCScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCScrollView.m; sourceTree = "<group>"; };
+		BA35D70A2393B65C006A23D8 /* NestingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NestingViewController.h; sourceTree = "<group>"; };
+		BA35D70B2393B65C006A23D8 /* NestingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NestingViewController.m; sourceTree = "<group>"; };
 		BA38374C2253AB4C00704BB6 /* TMeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMeButton.h; sourceTree = "<group>"; };
 		BA38374D2253AB4C00704BB6 /* TMeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMeButton.m; sourceTree = "<group>"; };
 		BA3BDE37237EDEEE0026E4E4 /* UIViewController+Hidden.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Hidden.h"; sourceTree = "<group>"; };
@@ -258,12 +267,6 @@
 		BAA393E81E5185B000B1F34D /* ShowLable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowLable.m; sourceTree = "<group>"; };
 		BAA5001C22AA77630076EC4F /* SlideViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideViewViewController.h; sourceTree = "<group>"; };
 		BAA5001D22AA77630076EC4F /* SlideViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideViewViewController.m; sourceTree = "<group>"; };
-		BAA5002322AB61210076EC4F /* NemoScrollerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NemoScrollerView.h; sourceTree = "<group>"; };
-		BAA5002422AB61210076EC4F /* XZCScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCScrollView.h; sourceTree = "<group>"; };
-		BAA5002522AB61210076EC4F /* XZCScrollerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCScrollerButton.m; sourceTree = "<group>"; };
-		BAA5002622AB61210076EC4F /* NemoScrollerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NemoScrollerView.m; sourceTree = "<group>"; };
-		BAA5002722AB61210076EC4F /* XZCScrollerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCScrollerButton.h; sourceTree = "<group>"; };
-		BAA5002822AB61210076EC4F /* XZCScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCScrollView.m; sourceTree = "<group>"; };
 		BAA5003B22AB63950076EC4F /* UIView+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Size.h"; sourceTree = "<group>"; };
 		BAA5003C22AB63950076EC4F /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		BAA5003D22AB63950076EC4F /* UIView+Corners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Corners.h"; sourceTree = "<group>"; };
@@ -431,6 +434,19 @@
 				BA271AD22270A23400944168 /* ActivityViewController.m */,
 			);
 			path = UIActivityViewController;
+			sourceTree = "<group>";
+		};
+		BA35D7002393B1A8006A23D8 /* XZCScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				BA35D7012393B1A8006A23D8 /* NemoScrollerView.h */,
+				BA35D7042393B1A8006A23D8 /* NemoScrollerView.m */,
+				BA35D7022393B1A8006A23D8 /* XZCScrollView.h */,
+				BA35D7032393B1A8006A23D8 /* XZCScrollerButton.m */,
+				BA35D7052393B1A8006A23D8 /* XZCScrollerButton.h */,
+				BA35D7062393B1A8006A23D8 /* XZCScrollView.m */,
+			);
+			path = XZCScrollView;
 			sourceTree = "<group>";
 		};
 		BA3BDE36237EDED70026E4E4 /* UIViewController+Hidden */ = {
@@ -647,10 +663,10 @@
 		BA8B465B214DFD4D00D9EC42 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				BA35D7002393B1A8006A23D8 /* XZCScrollView */,
 				BAA5004722AB6B300076EC4F /* NSString(Extension) */,
 				BAA5003A22AB63950076EC4F /* UIView (Extension) */,
 				BAA5003922AB63590076EC4F /* New Group */,
-				BAA5002222AB61210076EC4F /* XZCScrollView */,
 				BA8C5F2E22A2BC92009A06A9 /* RatingControl */,
 				BA4C73FB2260923400D49AF3 /* VideoPlayer */,
 				BA41C8E52250D11E005BA4CF /* ThemeButton */,
@@ -856,21 +872,10 @@
 			children = (
 				BAA5001C22AA77630076EC4F /* SlideViewViewController.h */,
 				BAA5001D22AA77630076EC4F /* SlideViewViewController.m */,
+				BA35D70A2393B65C006A23D8 /* NestingViewController.h */,
+				BA35D70B2393B65C006A23D8 /* NestingViewController.m */,
 			);
 			path = SlideView;
-			sourceTree = "<group>";
-		};
-		BAA5002222AB61210076EC4F /* XZCScrollView */ = {
-			isa = PBXGroup;
-			children = (
-				BAA5002722AB61210076EC4F /* XZCScrollerButton.h */,
-				BAA5002522AB61210076EC4F /* XZCScrollerButton.m */,
-				BAA5002322AB61210076EC4F /* NemoScrollerView.h */,
-				BAA5002622AB61210076EC4F /* NemoScrollerView.m */,
-				BAA5002422AB61210076EC4F /* XZCScrollView.h */,
-				BAA5002822AB61210076EC4F /* XZCScrollView.m */,
-			);
-			path = XZCScrollView;
 			sourceTree = "<group>";
 		};
 		BAA5003922AB63590076EC4F /* New Group */ = {
@@ -1147,19 +1152,19 @@
 				BA7EFC44214A8C50008C154D /* CaptionView.m in Sources */,
 				BA620092224615AF001F21B4 /* ViewControllerConfigure.m in Sources */,
 				BAA5001E22AA77630076EC4F /* SlideViewViewController.m in Sources */,
-				BAA5002B22AB61210076EC4F /* XZCScrollView.m in Sources */,
 				BA7CE04C1E557C80002226D5 /* JSObject.m in Sources */,
 				BA7EFC48214A8C9E008C154D /* ASCountDownView.m in Sources */,
 				BA834A561E5294F70057DB88 /* WebViewController.m in Sources */,
 				BA8B467B214E347A00D9EC42 /* FoldingViewController.m in Sources */,
 				BA496364224E61AA0098D85F /* TextField.m in Sources */,
 				BA4C73FE2260928A00D49AF3 /* VideoPlayer.m in Sources */,
+				BA35D7082393B1A8006A23D8 /* NemoScrollerView.m in Sources */,
 				BA38374E2253AB4C00704BB6 /* TMeButton.m in Sources */,
 				BA8B4683214E364B00D9EC42 /* FoldingSectionHeader.m in Sources */,
 				BA3BDE3D237EDF2F0026E4E4 /* HiddenViewController.m in Sources */,
 				BA6200842245E720001F21B4 /* ShowGIFViewController.m in Sources */,
 				BA435697230949A20022B697 /* NMDragListView.m in Sources */,
-				BAA5002922AB61210076EC4F /* XZCScrollerButton.m in Sources */,
+				BA35D7092393B1A8006A23D8 /* XZCScrollView.m in Sources */,
 				BA82C3C41E5D967B003B83FF /* ChatImageView.m in Sources */,
 				BA7EFC4B214A8CDA008C154D /* ASViewController.m in Sources */,
 				BAA5004622AB63960076EC4F /* UIView+Corners.m in Sources */,
@@ -1179,7 +1184,6 @@
 				BA496361224E5CB90098D85F /* NMTextField.m in Sources */,
 				BA8C5F3522A2BD82009A06A9 /* StarViewController.m in Sources */,
 				BA43569A23094A360022B697 /* NMDragListViewConfiguration.m in Sources */,
-				BAA5002A22AB61210076EC4F /* NemoScrollerView.m in Sources */,
 				BAA393B91E51859800B1F34D /* AppDelegate.m in Sources */,
 				BAA5004422AB63960076EC4F /* UIView+Size.m in Sources */,
 				BA1BFFAC231036BC003A2F71 /* ActivityHeaderView.m in Sources */,
@@ -1194,10 +1198,12 @@
 				BA7CE0481E557B78002226D5 /* UIWebViewController.m in Sources */,
 				BA43568E230910130022B697 /* WeChatCircleViewController.m in Sources */,
 				BAA5004322AB63960076EC4F /* UIView+Animation.m in Sources */,
+				BA35D70C2393B65C006A23D8 /* NestingViewController.m in Sources */,
 				BA6200992246170B001F21B4 /* VideoView.m in Sources */,
 				BAA393B61E51859800B1F34D /* main.m in Sources */,
 				BA62009C2246172D001F21B4 /* VideoMaskView.m in Sources */,
 				BA1E8FBB226367B70053691C /* BRPickerViewViewController.m in Sources */,
+				BA35D7072393B1A8006A23D8 /* XZCScrollerButton.m in Sources */,
 				BA8B4674214DFFBC00D9EC42 /* ExcelViewController.m in Sources */,
 				BAA5005322AB6B300076EC4F /* NSString+Size.m in Sources */,
 				BAA393E91E5185B000B1F34D /* ShowLable.m in Sources */,

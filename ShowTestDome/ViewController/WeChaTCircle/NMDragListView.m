@@ -216,7 +216,7 @@
         }
         
         if (self.conf.showDeleteView) {
-            if (tagButton.frame.origin.y + tagButton.frame.size.height > SCREENHEIGHT - self.conf.deleteViewHeight) {
+            if (tagButton.frame.origin.y + tagButton.frame.size.height > nScreenHeight() - self.conf.deleteViewHeight) {
                 [self setDeleteViewDeleteState];
             }
             else {
@@ -231,7 +231,7 @@
         BOOL deleted = NO;
         if (self.conf.showDeleteView) {
             [self hiddenDeleteViewAnimation];
-            if (tagButton.frame.origin.y + tagButton.frame.size.height > SCREENHEIGHT - self.conf.deleteViewHeight) {
+            if (tagButton.frame.origin.y + tagButton.frame.size.height > nScreenHeight() - self.conf.deleteViewHeight) {
                 deleted = YES;
                 [self deleteItem:tagButton];
             }
@@ -374,7 +374,7 @@
 #pragma mark - 底部删除 视图
 - (UIView *)deleteView{
     if (!_deleteView) {
-        _deleteView = [[UIView alloc] initWithFrame:CGRectMake(0, SCREENHEIGHT, SCREENWIDTH, self.conf.deleteViewHeight)];
+        _deleteView = [[UIView alloc] initWithFrame:CGRectMake(0, nScreenHeight(), nScreenWidth(), self.conf.deleteViewHeight)];
         _deleteView.backgroundColor = [UIColor redColor];
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.tag = 201809;

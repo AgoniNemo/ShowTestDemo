@@ -7,8 +7,6 @@
 
 #import <UIKit/UIKit.h>
 
-#define rect [UIScreen mainScreen].bounds
-
 @interface XZCScrollView : UIScrollView
 @property (nonatomic,weak) UIViewController *viewController;
 @property (nonatomic,strong) NSArray *viewControllers;

@@ -38,7 +38,7 @@
             [view removeFromSuperview];
         }
     }
-    _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT)];
+    _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, nScreenWidth(), nScreenHeight())];
     _webView.delegate = self;
     NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html" inDirectory:@"dist"];
     NSURL * url = [NSURL fileURLWithPath:path];
